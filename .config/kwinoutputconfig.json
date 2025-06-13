@@ -11,7 +11,7 @@
                 "edidHash": "fc8fea2768577c52abacb6c55571ca05",
                 "edidIdentifier": "BOE 2580 0 18 2021 0",
                 "highDynamicRange": false,
-                "iccProfilePath": "/home/bugaddr/.color/sRGB Color Space Profile.icm",
+                "iccProfilePath": "/home/bugaddr/.config/dotfiles_assets/color/srgb_color_space_profile.icm",
                 "mode": {
                     "height": 1440,
                     "refreshRate": 165003,

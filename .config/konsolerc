@@ -1,0 +1,31 @@
+[Desktop Entry]
+DefaultProfile=Profile 1.profile
+
+[General]
+ConfigVersion=1
+
+[KonsoleWindow]
+RememberWindowSize=false
+ShowWindowTitleOnTitleBar=true
+
+[MainWindow]
+1707x960 screen: Height=447
+1707x960 screen: Width=851
+1707x960 screen: Window-Maximized=true
+1920x1080 screen: Height=636
+1920x1080 screen: Width=1013
+2560x1440 screen: Height=636
+2560x1440 screen: Width=1013
+2560x1440 screen: Window-Maximized=true
+2560x1440 screen: XPosition=773
+2560x1440 screen: YPosition=394
+RestorePositionForNextInstance=false
+eDP-1=eDP-1
+
+[Notification Messages]
+CloseAllEmptyTabs=true
+CloseAllTabs=true
+CloseSingleTab=true
+
+[UiSettings]
+ColorScheme=

@@ -1,0 +1,40 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
+
+[1cf68fac-eaef-463a-b891-e1ca2156b971]
+Description=Window settings for firefox Developer Tools
+above=true
+aboverule=2
+title=Developer Tools
+titlematch=2
+types=1
+wmclass=firefox
+wmclassmatch=1
+
+[5f56eef1-f4bf-429e-bc73-63b318ca89fe]
+above=true
+aboverule=3
+
+[General]
+count=2
+rules=ad16b794-6db1-4605-a060-aab6cc9a88d1,1cf68fac-eaef-463a-b891-e1ca2156b971
+
+[ad16b794-6db1-4605-a060-aab6cc9a88d1]
+Description=Window settings for firefox
+above=true
+aboverule=2
+title=Picture-in-Picture
+titlematch=1
+types=1
+wmclass=firefox
+wmclassmatch=1
+
+[e14b945a-c60e-4d09-ab65-6f55131f6021]
+Description=Window settings for firefox
+above=true
+aboverule=2
+title=Picture-in-Picture
+titlematch=1
+types=1
+wmclass=firefox
+wmclassmatch=1

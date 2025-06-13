@@ -1,0 +1,40 @@
+{
+    "currentIndex": 0,
+    "tabs": [
+        {
+            "checkerIndex": 0,
+            "customCheckers": [
+            ],
+            "customCompileCommand": "",
+            "customTimeLimit": -1,
+            "editorAnchor": 1323,
+            "editorCursor": 1323,
+            "editorText": "#include <bits/stdc++.h>\n\nusing namespace std;\n\n#define fixed(n) fixed << setprecision(n)\n#define ceil(n, m) (((n) + (m) - 1) / (m))\n#define add_mod(a, b, m) (((a % m) + (b % m)) % m)\n#define sub_mod(a, b, m) (((a % m) - (b % m) + m) % m)\n#define mul_mod(a, b, m) (((a % m) * (b % m)) % m)\n#define all(vec) vec.begin(), vec.end()\n#define rall(vec) vec.rbegin(), vec.rend()\n#define sz(x) int(x.size())\n#define debug(x) cout << #x << \": \" << (x) << \"\\n\";\n#define fi first\n#define se second\n#define ll long long\n#define ull unsigned long long\n#define EPS 1e-9\nconstexpr int INF = 1 << 30, Mod = 1e9 + 7;\nconstexpr ll LINF = 1LL << 62;\n#define PI acos(-1)\ntemplate < typename T = int > using Pair = pair < T, T >;\nvector < string > RET = {\"NO\", \"YES\"};\n\ntemplate < typename T = int > istream& operator >> (istream &in, vector < T > &v) {\n    for (auto &x : v) in >> x;\n    return in;\n}\n\ntemplate < typename T = int > ostream& operator << (ostream &out, const vector < T > &v) { \n    for (const T &x : v) out << x << ' '; \n    return out;\n}\n\nvoid Solve(){\n    \n}\n\nint main(){\n    ios_base::sync_with_stdio(false), cin.tie(nullptr), cout.tie(nullptr);\n    int test_cases = 1;\n    // cin >> test_cases;\n    for(int tc = 1; tc <= test_cases; tc++){\n        // cout << \"Case #\" << tc << \": \";\n        Solve();\n    }\n    return 0;\n}\n",
+            "expected": [
+                ""
+            ],
+            "filePath": "",
+            "horizontalScrollBarValue": 0,
+            "input": [
+                ""
+            ],
+            "isLanguageSet": true,
+            "language": "C++",
+            "problemURL": "",
+            "savedText": "#include <bits/stdc++.h>\n\nusing namespace std;\n\n#define fixed(n) fixed << setprecision(n)\n#define ceil(n, m) (((n) + (m) - 1) / (m))\n#define add_mod(a, b, m) (((a % m) + (b % m)) % m)\n#define sub_mod(a, b, m) (((a % m) - (b % m) + m) % m)\n#define mul_mod(a, b, m) (((a % m) * (b % m)) % m)\n#define all(vec) vec.begin(), vec.end()\n#define rall(vec) vec.rbegin(), vec.rend()\n#define sz(x) int(x.size())\n#define debug(x) cout << #x << \": \" << (x) << \"\\n\";\n#define fi first\n#define se second\n#define ll long long\n#define ull unsigned long long\n#define EPS 1e-9\nconstexpr int INF = 1 << 30, Mod = 1e9 + 7;\nconstexpr ll LINF = 1LL << 62;\n#define PI acos(-1)\ntemplate < typename T = int > using Pair = pair < T, T >;\nvector < string > RET = {\"NO\", \"YES\"};\n\ntemplate < typename T = int > istream& operator >> (istream &in, vector < T > &v) {\n    for (auto &x : v) in >> x;\n    return in;\n}\n\ntemplate < typename T = int > ostream& operator << (ostream &out, const vector < T > &v) { \n    for (const T &x : v) out << x << ' '; \n    return out;\n}\n\nvoid Solve(){\n    \n}\n\nint main(){\n    ios_base::sync_with_stdio(false), cin.tie(nullptr), cout.tie(nullptr);\n    int test_cases = 1;\n    // cin >> test_cases;\n    for(int tc = 1; tc <= test_cases; tc++){\n        // cout << \"Case #\" << tc << \": \";\n        Solve();\n    }\n    return 0;\n}\n",
+            "testCaseSplitterStates": [
+                [
+                    310,
+                    309,
+                    310
+                ]
+            ],
+            "testcasesIsShow": [
+                true
+            ],
+            "timestamp": 1749215354807,
+            "untitledIndex": 2,
+            "verticalScrollbarValue": 0
+        }
+    ]
+}

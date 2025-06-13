@@ -1,0 +1,50 @@
+## Delete junk
+# pacman -Qqd | sudo pacman -Rsu -
+
+## Blackarch overwrite
+# sudo pacman -Syyu --needed --overwrite='*'
+
+## Env vars
+export PS1="\[\e[1;32m\]$USER@$HOSTNAME \w \`if [ \$? = 0 ]; then echo -e '\[\e[1;32m\]'; else echo -e '\[\e[1;31m\]'; fi\`\\$ \[\e[0m\]"
+#export MOZ_DISABLE_RDD_SANDBOX=1
+#export LIBVA_DRIVER_NAME=nvidia
+#export NVD_GPU=0
+#export __EGL_VENDOR_LIBRARY_FILENAMES='/usr/share/glvnd/egl_vendor.d/10_nvidia.json'
+#export VK_ICD_FILENAMES='/usr/share/vulkan/icd.d/nvidia_icd.json'
+
+## THM extended search csv
+curl -s 'https://tryhackme.com/api/v2/hacktivities/extended-search?kind=all&difficulty=all&order=newest&roomType=all&contentSubType=all&page=1&searchText=&userProgress=all&limit=100' | jq '.data.docs.[] | {code: .code, title: .title, description: .description, Freetouse: .freeToUse, Difficulty: .difficultyLevel, Type: .type}' | jq -r '[.code, .title, .description, .Freetouse, .Difficulty, .Type] | @csv'
+
+## THM api markdown
+curl -s 'https://tryhackme.com/api/v2/hacktivities/extended-search?kind=all&difficulty=all&order=newest&roomType=walkthrough&contentSubType=all&page=1&searchText=&userProgress=all&limit=100' | jq -r '.data.docs[] | "| " + (.code | tostring) + " | " + (.title // "N/A") + " | " + (.description // "N/A") + " | " + (.freeToUse | tostring) + " | " + (.difficultyLevel | tostring) + " | " + (.type // "N/A") + " |"'
+
+## Docker
+sudo docker ps -a # List processes
+sudo docker-compose up --force-recreate -d 
+
+## COnvert
+magick *.png -background white -page a4 -rotate 90 bpf.pdf
+
+## Set refresh rate to 165
+kscreen-doctor output.eDP-1.mode.2560x1440@165
+kscreen-doctor -o # check it
+
+## CHeck live battery stats
+watch -n0.5 cat /sys/class/power_supply/BAT1/uevent
+upower -i /org/freedesktop/UPower/devices/battery_BAT1
+
+## Burp
+exec "$JAVA_HOME/bin/java" --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED --add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED --add-opens=java.base/jdk.internal.org.objectweb.asm.Opcodes=ALL-UNNAMED -javaagent:/bin/loader.jar -noverify -jar /usr/share/burpsuite-pro/burpsuite-pro.jar "$@"
+
+## Firefox with vaapi for hybrid mode
+MOZ_DISABLE_RDD_SANDBOX=1 LIBVA_DRIVER_NAME=nvidia NVD_GPU=0 prime-run firefox
+
+## Keycode info
+sudo libinput debug-events
+sudo evtest /dev/input/event4
+sudo showkey -s
+
+## Powerprofiles
+powerprofilesctl set power-saver
+powerprofilesctl set balanced
+powerprofilesctl set performance

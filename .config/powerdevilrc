@@ -1,0 +1,42 @@
+[AC][Display]
+DimDisplayIdleTimeoutSec=120
+TurnOffDisplayIdleTimeoutSec=180
+
+[AC][Performance]
+PowerProfile=performance
+
+[AC][RunScript]
+ProfileLoadCommand=kscreen-doctor output.eDP-1.mode.2560x1440@165
+
+[AC][SuspendAndShutdown]
+AutoSuspendIdleTimeoutSec=300
+InhibitLidActionWhenExternalMonitorPresent=false
+
+[Battery][Display]
+DisplayBrightness=50
+TurnOffDisplayIdleTimeoutSec=180
+
+[Battery][Performance]
+PowerProfile=balanced
+
+[Battery][RunScript]
+ProfileLoadCommand=kscreen-doctor output.eDP-1.mode.2560x1440@144
+
+[Battery][SuspendAndShutdown]
+AutoSuspendIdleTimeoutSec=300
+InhibitLidActionWhenExternalMonitorPresent=false
+
+[BatteryManagement]
+BatteryCriticalAction=1
+
+[LowBattery][Display]
+UseProfileSpecificDisplayBrightness=false
+
+[LowBattery][Performance]
+PowerProfile=power-saver
+
+[LowBattery][RunScript]
+ProfileLoadCommand=kscreen-doctor output.eDP-1.mode.2560x1440@60
+
+[LowBattery][SuspendAndShutdown]
+InhibitLidActionWhenExternalMonitorPresent=false

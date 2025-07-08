@@ -3,5 +3,5 @@ Description=20-20-20 Eye Break Reminder
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/notify-send "20-20-20 Eye Break" "Look at something 20 feet away for 20 seconds" --urgency=critical --expire-time=20000 --icon=preferences-desktop-accessibility
+ExecStart=/usr/bin/notify-send "20-20-20 Eye Break" "Look at something 20 feet away for 20 seconds." --urgency=normal --expire-time=60000
 Environment=DISPLAY=:0

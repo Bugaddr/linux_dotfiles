@@ -142,7 +142,7 @@ Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00j\x00
 
 [General]
 ColorScheme=BreezeLight
-ColorSchemeHash=98139d0bac64c4e9f97721675584832c7c7a0bf0
+ColorSchemeHash=8ff306d9a93379c74540e00506966df24df1798b
 UseSystemBell=true
 XftAntialias=true
 XftHintStyle=hintslight

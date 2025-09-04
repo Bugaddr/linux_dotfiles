@@ -1,6 +1,6 @@
 // Startup & Homepage
-user_pref("browser.startup.page", 1);  // Open homepage on startup
-user_pref("browser.startup.homepage", "file:///home/bugaddr/Documents/Git/daily_digest/index.html");  // Local HTML as homepage
+//user_pref("browser.startup.page", 1);  // Open homepage on startup
+//user_pref("browser.startup.homepage", "file:///home/bugaddr/Documents/Git/daily_digest/index.html");  // Local HTML as homepage
 
 // New Tab & UI Elements
 user_pref("browser.newtabpage.enabled", true);  // Enable new tab page

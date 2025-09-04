@@ -137,12 +137,11 @@ ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
 DirSelectDialog Size=884,600
-History Items[$e]=file:$HOME/Documents/kiratwebd,file:$HOME/Documents/kiratwebd,file:$HOME/Documents/kiratwebd,file:$HOME/Junk/A2Z/2023DEC/20231203002954/takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2,file:$HOME/Documents/Git/dsa_playground,file:$HOME/Junk/test_uwu,file:$HOME/Junk,file:$HOME/Documents/Git/daily_digest,file:$HOME/Documents/Git/something,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Arc,file:$HOME/Documents/git/Infosec_Writeups,file:$HOME/Documents/git/Infosec_Writeups,file:$HOME/Videos/Obs,file:$HOME
+History Items[$e]=file:$HOME/Junk/sunscreen,file:$HOME/Documents/kiratwebd,file:$HOME/Documents/kiratwebd,file:$HOME/Documents/kiratwebd,file:$HOME/Junk/A2Z/2023DEC/20231203002954/takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2,file:$HOME/Documents/Git/dsa_playground,file:$HOME/Junk/test_uwu,file:$HOME/Junk,file:$HOME/Documents/Git/daily_digest,file:$HOME/Documents/Git/something,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Arc,file:$HOME/Documents/git/Infosec_Writeups,file:$HOME/Documents/git/Infosec_Writeups,file:$HOME/Videos/Obs,file:$HOME
 Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00j\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
 
 [General]
-ColorScheme=BreezeLight
-ColorSchemeHash=8ff306d9a93379c74540e00506966df24df1798b
+ColorSchemeHash=0594cdbf8684a5ef175629572f86003b65badc3d
 UseSystemBell=true
 XftAntialias=true
 XftHintStyle=hintslight
@@ -183,6 +182,7 @@ ScreenScaleFactors=eDP-1=1.5;DP-1=1.5;DP-2=1.5;HDMI-1-0=1.5;DP-1-0=1.5;
 Dialog Size=600,480
 
 [PreviewSettings]
+EnableRemoteFolderThumbnail=false
 MaximumRemoteSize=0
 
 [WM]

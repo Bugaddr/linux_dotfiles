@@ -22,6 +22,12 @@ ShowWindowTitleOnTitleBar=true
 RestorePositionForNextInstance=false
 eDP-1=eDP-1
 
+[MainWindow][Toolbar mainToolBar]
+ToolButtonStyle=IconOnly
+
+[MainWindow][Toolbar sessionToolbar]
+ToolButtonStyle=IconOnly
+
 [Notification Messages]
 CloseAllEmptyTabs=true
 CloseAllTabs=true

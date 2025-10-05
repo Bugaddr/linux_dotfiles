@@ -38,7 +38,6 @@ alias nvidia='sudo envycontrol -s nvidia --verbose'
 alias intel='sudo envycontrol -s integrated --verbose'
 alias cdtemp='cd $(mktemp -d)'
 alias mirror='sudo reflector --protocol https --latest 50 --age 24 --sort rate --verbose --save /etc/pacman.d/mirrorlist'
-alias cam='sudo rmmod uvcvideo; sudo insmod ~/Documents/git/uvc/uvcvideo.ko && echo done'
 
 ## Git alias
 alias gcl='git clone'

@@ -9,6 +9,10 @@ user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);  // Disab
 user_pref("browser.toolbars.bookmarks.visibility", "never");  // Show bookmarks toolbar only on new tab
 user_pref("browser.preferences.moreFromMozilla", false);  // Hide "More from Mozilla" section
 user_pref("extensions.pocket.enabled", false);  // Disable Pocket integration
+user_pref("browser.urlbar.suggest.topsites", false); // Disable topsites suggestion
+user_pref("browser.aboutwelcome.enabled", false); // Disabel welcome page
+user_pref("browser.vpn_promo.enabled", false); // Disable firefox vpn promo
+user_pref("browser.promo.focus.enabled", false); // Disable firefox focus promo
 
 // Mouse & Tab Behavior
 user_pref("browser.ctrlTab.sortByRecentlyUsed", true);  // Cycle tabs by recent usage (Ctrl+Tab)
@@ -28,7 +32,7 @@ user_pref("signon.rememberSignons", false);  // Disable password saving
 
 // Networking (DNS-over-HTTPS)
 user_pref("network.trr.mode", 3);  // TRR only (DoH without fallback)
-user_pref("network.trr.uri", "https://cloudflare-dns.com/dns-query");  // Set DoH URI (Cloudflare Family)
+user_pref("network.trr.uri", "https://family.cloudflare-dns.com/dns-query");  // Set DoH URI (Cloudflare Family)
 
 // Graphics & Hardware Acceleration https://github.com/elFarto/nvidia-vaapi-driver?tab=readme-ov-file#firefox
 user_pref("media.hardware-video-decoding.force-enabled", true);  // Enable VA-API hardware video decoding

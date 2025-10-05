@@ -1,8 +1,8 @@
 [General]
 AirplaneModeEnabled=false
 HotspotConnectionPath=
-HotspotName=111
-HotspotPassword=11111111
+HotspotName=Y6
+HotspotPassword=password
 ManageVirtualConnections=true
 SystemConnectionsByDefault=true
 UnlockModemOnDetection=true

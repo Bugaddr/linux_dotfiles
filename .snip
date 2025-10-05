@@ -1,8 +1,8 @@
 ## Delete junk
-# pacman -Qqd | sudo pacman -Rsu -
+pacman -Qqd | sudo pacman -Rsu -
 
 ## Blackarch overwrite
-# sudo pacman -Syyu --needed --overwrite='*'
+sudo pacman -Syyu --needed --overwrite='*'
 
 ## Env vars
 export PS1="\[\e[1;32m\]$USER@$HOSTNAME \w \`if [ \$? = 0 ]; then echo -e '\[\e[1;32m\]'; else echo -e '\[\e[1;31m\]'; fi\`\\$ \[\e[0m\]"
@@ -22,7 +22,7 @@ curl -s 'https://tryhackme.com/api/v2/hacktivities/extended-search?kind=all&diff
 sudo docker ps -a # List processes
 sudo docker-compose up --force-recreate -d 
 
-## COnvert
+## Convert
 magick *.png -background white -page a4 -rotate 90 bpf.pdf
 
 ## Set refresh rate to 165
@@ -51,3 +51,7 @@ powerprofilesctl set performance
 
 ## Ram usage
 vmstat -S M
+
+## Java setup
+archlinux-java status
+archlinux-java set java-21-openjdk

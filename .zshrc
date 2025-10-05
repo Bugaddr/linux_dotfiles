@@ -130,18 +130,21 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # My alias
-alias hybrid='sudo envycontrol -s hybrid --rtd3 3 --verbose'
-alias nvidia='sudo envycontrol -s nvidia --verbose'
-alias intel='sudo envycontrol -s integrated --verbose'
+alias hybrid='sudo envycontrol -s hybrid --rtd3 3 --verbose --dm sddm'
+alias nvidia='sudo envycontrol -s nvidia --verbose --dm sddm'
+alias intel='sudo envycontrol -s integrated --verbose --dm sddm'
 alias cdtemp='cd $(mktemp -d)'
-alias mirror='sudo reflector --protocol https --latest 20 --age 24 --sort rate --verbose --save /etc/pacman.d/mirrorlist'
+alias updatemirror='sudo reflector --protocol https --latest 20 --age 24 --sort rate --verbose --country IN,SG --save /etc/pacman.d/mirrorlist'
 alias wifite='sudo wifite -mac --daemon --kill; sudo airmon-ng stop wlan0mon; sudo systemctl restart NetworkManager'
 alias userjs='~/.mozilla/updater.sh -l -s -o ~/.mozilla/user-overrides.js'
 alias changemac='sudo systemctl stop NetworkManager; sudo macchanger -a wlan0; sudo systemctl start NetworkManager '
 alias loginwifi="changemac; sleep 5; curl 'http://172.16.177.5:8090/login.xml' -X POST --data-raw 'mode=191&username=pawarpa&password=msvw88&producttype=0'"
 alias turbo1='sudo x86_energy_perf_policy --turbo-enable 1'
 alias turbo0='sudo x86_energy_perf_policy --turbo-enable 0'
-alias quiet='echo quiet | sudo tee /sys/firmware/acpi/platform_profile'
-alias balanced='echo balanced | sudo tee /sys/firmware/acpi/platform_profile'
-alias perf='echo balanced-performance | sudo tee /sys/firmware/acpi/platform_profile'
+alias quiet='echo quiet | sudo tee /sys/firmware/acpi/platform_profile; powerprofilesctl set power-saver'
+alias balanced='echo balanced | sudo tee /sys/firmware/acpi/platform_profile; powerprofilesctl set balanced'
+alias perf='echo balanced-performance | sudo tee /sys/firmware/acpi/platform_profile; powerprofilesctl set performance'
+alias pp='cat /sys/firmware/acpi/platform_profile'
 alias dot='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+alias e='exit'
+alias suspend='systemctl suspend'

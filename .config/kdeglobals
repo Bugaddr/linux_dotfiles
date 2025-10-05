@@ -137,11 +137,12 @@ ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
 DirSelectDialog Size=884,600
-History Items[$e]=file:$HOME/Junk/sunscreen,file:$HOME/Documents/kiratwebd,file:$HOME/Documents/kiratwebd,file:$HOME/Documents/kiratwebd,file:$HOME/Junk/A2Z/2023DEC/20231203002954/takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2,file:$HOME/Documents/Git/dsa_playground,file:$HOME/Junk/test_uwu,file:$HOME/Junk,file:$HOME/Documents/Git/daily_digest,file:$HOME/Documents/Git/something,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Arc,file:$HOME/Documents/git/Infosec_Writeups,file:$HOME/Documents/git/Infosec_Writeups,file:$HOME/Videos/Obs,file:$HOME
+History Items[$e]=file:$HOME/Junk/a2z_old_sheet,file:$HOME/Junk/a2z_old_sheet,file:$HOME/Junk/articles,file:$HOME/Junk/sunscreen,file:$HOME/Documents/kiratwebd,file:$HOME/Documents/kiratwebd,file:$HOME/Documents/kiratwebd,file:$HOME/Junk/A2Z/2023DEC/20231203002954/takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2,file:$HOME/Documents/Git/dsa_playground,file:$HOME/Junk/test_uwu,file:$HOME/Junk,file:$HOME/Documents/Git/daily_digest,file:$HOME/Documents/Git/something,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Arc,file:$HOME/Documents/git/Infosec_Writeups,file:$HOME/Documents/git/Infosec_Writeups,file:$HOME/Videos/Obs,file:$HOME
 Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00j\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
 
 [General]
-ColorSchemeHash=0594cdbf8684a5ef175629572f86003b65badc3d
+ColorScheme=BreezeLight
+ColorSchemeHash=2c3f86428c11011a7c64ee1e7f47c274d498ff10
 UseSystemBell=true
 XftAntialias=true
 XftHintStyle=hintslight
@@ -161,7 +162,6 @@ Breadcrumb Navigation=false
 Decoration position=2
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
-Show Bookmarks=false
 Show Full Path=false
 Show Inline Previews=true
 Show Preview=false

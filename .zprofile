@@ -1,7 +1,7 @@
-if [ -z "$WAYLAND_DISPLAY" ] && [ -n "$XDG_VTNR" ]; then
-    if [ "$XDG_VNTR" -eq 1 ]; then
-        hyprland
-    fi else if [ "$XDG_VNTR" -eq 2 ]; then
-        true
-    fi
+#!/usr/bin/env zsh
+
+# Start hyprland
+if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
+  export WLR_DRM_DEVICES=/dev/dri/card0
+  exec Hyprland
 fi

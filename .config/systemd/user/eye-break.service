@@ -3,5 +3,7 @@ Description=20-20-20 Eye Break Reminder
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/notify-send "202020 Break" --urgency=normal --expire-time=10000
 Environment=DISPLAY=:0
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+#ExecStart=/bin/bash -c '/usr/bin/notify-send "$(date +"%I:%M:%S %p")" "Time to Relax" -a "Break Reminder" -i redeyes.svg --urgency=normal --expire-time=20000'
+ExecStart=/bin/bash -c '/usr/bin/notify-send "$(date +"%%I:%%M:%%S %%p")" "Time to Relax" -a "Break Reminder" -i redeyes.svg --urgency=normal --expire-time=20000'

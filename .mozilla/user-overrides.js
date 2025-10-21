@@ -21,7 +21,7 @@ user_pref("middlemouse.paste", false);  // Disable middle-click paste (Linux beh
 
 // Accounts & Profiles
 user_pref("identity.fxaccounts.toolbar.pxiToolbarEnabled", false);  // Disable Firefox Account PXI toolbar
-user_pref("browser.profiles.enabled", true); // Enable profile manager
+//user_pref("browser.profiles.enabled", true); // Enable profile manager
 
 // Downloads
 user_pref("browser.download.folderList", 2);  // Use specified download directory

@@ -24,22 +24,22 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=163,212,250
-BackgroundNormal=252,252,252
+BackgroundAlternate=30,87,116
+BackgroundNormal=41,44,48
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
-ForegroundInactive=112,125,138
-ForegroundLink=41,128,185
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=35,38,41
+ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Complementary]
-BackgroundAlternate=27,30,32
-BackgroundNormal=42,46,50
+BackgroundAlternate=30,87,116
+BackgroundNormal=32,35,38
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
@@ -52,96 +52,96 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Header]
-BackgroundAlternate=239,240,241
-BackgroundNormal=222,224,226
+BackgroundAlternate=32,35,38
+BackgroundNormal=41,44,48
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
-ForegroundInactive=112,125,138
-ForegroundLink=41,128,185
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=35,38,41
+ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Header][Inactive]
-BackgroundAlternate=227,229,231
-BackgroundNormal=239,240,241
+BackgroundAlternate=41,44,48
+BackgroundNormal=32,35,38
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
-ForegroundInactive=112,125,138
-ForegroundLink=41,128,185
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=35,38,41
+ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Selection]
-BackgroundAlternate=163,212,250
+BackgroundAlternate=30,87,116
 BackgroundNormal=61,174,233
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
-ForegroundActive=255,255,255
-ForegroundInactive=112,125,138
+ForegroundActive=252,252,252
+ForegroundInactive=161,169,177
 ForegroundLink=253,188,75
 ForegroundNegative=176,55,69
 ForegroundNeutral=198,92,0
-ForegroundNormal=255,255,255
+ForegroundNormal=252,252,252
 ForegroundPositive=23,104,57
 ForegroundVisited=155,89,182
 
 [Colors:Tooltip]
-BackgroundAlternate=239,240,241
-BackgroundNormal=247,247,247
+BackgroundAlternate=32,35,38
+BackgroundNormal=41,44,48
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
-ForegroundInactive=112,125,138
-ForegroundLink=41,128,185
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=35,38,41
+ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:View]
-BackgroundAlternate=247,247,247
-BackgroundNormal=255,255,255
+BackgroundAlternate=29,31,34
+BackgroundNormal=20,22,24
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
-ForegroundInactive=112,125,138
-ForegroundLink=41,128,185
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=35,38,41
+ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Window]
-BackgroundAlternate=227,229,231
-BackgroundNormal=239,240,241
+BackgroundAlternate=41,44,48
+BackgroundNormal=32,35,38
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
-ForegroundInactive=112,125,138
-ForegroundLink=41,128,185
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=35,38,41
+ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
 DirSelectDialog Size=884,600
-History Items[$e]=file:$HOME/Junk/a2z_old_sheet,file:$HOME/Junk/a2z_old_sheet,file:$HOME/Junk/articles,file:$HOME/Junk/sunscreen,file:$HOME/Documents/kiratwebd,file:$HOME/Documents/kiratwebd,file:$HOME/Documents/kiratwebd,file:$HOME/Junk/A2Z/2023DEC/20231203002954/takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2,file:$HOME/Documents/Git/dsa_playground,file:$HOME/Junk/test_uwu,file:$HOME/Junk,file:$HOME/Documents/Git/daily_digest,file:$HOME/Documents/Git/something,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Arc,file:$HOME/Documents/git/Infosec_Writeups,file:$HOME/Documents/git/Infosec_Writeups,file:$HOME/Videos/Obs,file:$HOME
+History Items[$e]=file:$HOME/Junk/a2z_app,file:$HOME/Junk,file:$HOME/Junk/a2z_old_sheet,file:$HOME/Junk/a2z_old_sheet,file:$HOME/Junk/articles,file:$HOME/Junk/sunscreen,file:$HOME/Documents/kiratwebd,file:$HOME/Documents/kiratwebd,file:$HOME/Documents/kiratwebd,file:$HOME/Junk/A2Z/2023DEC/20231203002954/takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2,file:$HOME/Documents/Git/dsa_playground,file:$HOME/Junk/test_uwu,file:$HOME/Junk,file:$HOME/Documents/Git/daily_digest,file:$HOME/Documents/Git/something,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Arc,file:$HOME/Documents/git/Infosec_Writeups,file:$HOME/Documents/git/Infosec_Writeups,file:$HOME/Videos/Obs,file:$HOME
 Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00j\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
 
 [General]
-ColorScheme=BreezeLight
+ColorScheme=BreezeDark
 ColorSchemeHash=2c3f86428c11011a7c64ee1e7f47c274d498ff10
 UseSystemBell=true
 XftAntialias=true
@@ -150,7 +150,7 @@ XftSubPixel=rgb
 fixed=JetBrainsMono Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [Icons]
-Theme=breeze
+Theme=breeze-dark
 
 [KDE]
 SingleClick=false
@@ -160,8 +160,6 @@ Allow Expansion=false
 Automatically select filename extension=true
 Breadcrumb Navigation=false
 Decoration position=2
-LocationCombo Completionmode=5
-PathCombo Completionmode=5
 Show Full Path=false
 Show Inline Previews=true
 Show Preview=false
@@ -186,9 +184,9 @@ EnableRemoteFolderThumbnail=false
 MaximumRemoteSize=0
 
 [WM]
-activeBackground=227,229,231
-activeBlend=227,229,231
-activeForeground=35,38,41
-inactiveBackground=239,240,241
-inactiveBlend=239,240,241
-inactiveForeground=112,125,138
+activeBackground=39,44,49
+activeBlend=252,252,252
+activeForeground=252,252,252
+inactiveBackground=32,36,40
+inactiveBlend=161,169,177
+inactiveForeground=161,169,177

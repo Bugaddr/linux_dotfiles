@@ -1,8 +1,9 @@
 [Unit]
-Description=Run eye break reminder every 20 minutes
+Description=Run break reminder every 25 minutes
 
 [Timer]
-OnCalendar=*:0/20
+OnBootSec=25min
+OnUnitActiveSec=25min
 Persistent=true
 
 [Install]

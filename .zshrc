@@ -130,9 +130,9 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # My alias
-alias hybrid='sudo envycontrol -s hybrid --rtd3 3 --verbose --dm sddm'
-alias nvidia='sudo envycontrol -s nvidia --verbose --dm sddm'
-alias intel='sudo envycontrol -s integrated --verbose --dm sddm'
+alias hybrid='sudo envycontrol -s hybrid --rtd3 2 --force-comp --verbose'
+alias nvidia='sudo envycontrol -s nvidia --force-comp --verbose'
+alias intel='sudo envycontrol -s integrated --force-comp --verbose'
 alias cdtemp='cd $(mktemp -d)'
 alias updatemirror='sudo reflector --protocol https --latest 20 --age 24 --sort rate --verbose --country IN,SG --save /etc/pacman.d/mirrorlist'
 alias wifite='sudo wifite -mac --daemon --kill; sudo airmon-ng stop wlan0mon; sudo systemctl restart NetworkManager'

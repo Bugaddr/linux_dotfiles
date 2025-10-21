@@ -20,7 +20,7 @@ TurnOffDisplayIdleTimeoutSec=180
 PowerProfile=balanced
 
 [Battery][RunScript]
-ProfileLoadCommand=kscreen-doctor output.eDP-1.mode.2560x1440@144
+ProfileLoadCommand=kscreen-doctor output.eDP-1.mode.2560x1440@165
 
 [Battery][SuspendAndShutdown]
 AutoSuspendIdleTimeoutSec=300

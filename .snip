@@ -55,3 +55,26 @@ vmstat -S M
 ## Java setup
 archlinux-java status
 archlinux-java set java-21-openjdk
+
+## Rclone
+rclone copy -vP --transfers 10 gdrive_ppo:react course/
+
+
+## Count files & extensions
+fd -t f | awk -F. 'NF>1 {print $NF}' | sort | uniq -c | sort -nr
+
+## CHange all extension
+for f in *; do
+  [ -f "$f" ] && mv -- "$f" "${f%.*}.md"
+done
+
+## Suspend
+sudo systemctl status nvidia-hibernate nvidia-suspend.service nvidia-resume.service
+
+## Efibootmgr
+efibootmgr --create --disk /dev/nvme0n1 --part 5 --label 'Arch linux' --loader '\EFI\Linux\arch-linux.efi' --unicode
+
+## Refresh rate
+kscreen-doctor output.eDP-1.mode.2560x1440@165
+kscreen-doctor output.eDP-1.mode.2560x1440@144
+kscreen-doctor output.eDP-1.mode.2560x1440@60

@@ -23,10 +23,10 @@
   ],
 
 "bluetooth": {
-    "format-on": "󰂯 on",
-    "format-disabled": "󰂯 off",
-    "format-off": "󰂯 off",
-    "format-connected-battery": "󰂯󰁹 {device_battery_percentage}%",
+    "format-on": "󰂯on",
+    "format-disabled": "󰂯off",
+    "format-off": "󰂯off",
+    "format-connected-battery": "󰂯󰁹{device_battery_percentage}%",
     "on-click": "blueman-manager",
     "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
@@ -46,7 +46,7 @@
         "phone": "",
         "portable": "",
         "car": "",
-        "default": ["", "", ""],
+        "default": ["", "", ""]
     },
     "scroll-step": 1,
     "on-click": "pavucontrol",
@@ -72,7 +72,7 @@
     "all-outputs": true,
     "on-scroll-up": "hyprctl dispatch workspace e+1",
     "on-scroll-down": "hyprctl dispatch workspace e-1",
-    "sort-by-number": true,
+    "sort-by-number": true
     //"persistent-workspaces": {
     //  "*": 5
     //}
@@ -110,7 +110,7 @@
     "format-ethernet": "󰈀 {ipaddr}/{cidr}",
     "tooltip-format": "󰈀 {ifname} via {gwaddr} ({essid} {ipaddr}/{cidr})",
     "format-linked": "󰈀 {ifname} (No IP)",
-    "format-disconnected": "󰌙 Disconnected",
+    "format-disconnected": "󰌙 Disconnected"
   },
 
   // CPU
@@ -129,7 +129,7 @@
   "memory": {
     "interval": 60,
     "format": " {}%",
-    "tooltip-format": "RAM: {used:0.1f}G used / {total:0.1f}G total ({percentage}%)\nSwap: {swapUsed:0.1f}G used / {swapTotal:0.1f}G total ({swapPercentage}%)",
+    "tooltip-format": "RAM: {used:0.1f}G used / {total:0.1f}G total ({percentage}%)\nSwap: {swapUsed:0.1f}G used / {swapTotal:0.1f}G total ({swapPercentage}%)"
   },
 
   // Backlight

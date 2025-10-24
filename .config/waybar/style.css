@@ -1,7 +1,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: JetBrainsMono Nerd Font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 window#waybar {
@@ -49,6 +49,7 @@ button:hover {
 
 /* A subtle hover effect for all modules */
 #clock:hover,
+#bluetooth:hover,
 #battery:hover,
 #cpu:hover,
 #memory:hover,
@@ -99,6 +100,7 @@ button:hover {
 }
 
 #clock,
+#bluetooth,
 #battery,
 #cpu,
 #memory,
@@ -118,6 +120,7 @@ button:hover {
     padding: 2px 10px; /* Adjusted padding for centering */
     color: #f0f0f0;
 }
+
 
 #window,
 #workspaces {

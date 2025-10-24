@@ -2,7 +2,7 @@
 	name = Bugaddr
 	email = 75427894+Bugaddr@users.noreply.github.com
 [core]
-	editor = nano
+	editor = nvim
 [init]
 	defaultBranch = main
 [credential "https://github.com"]

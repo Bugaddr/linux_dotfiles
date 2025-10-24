@@ -78,3 +78,6 @@ efibootmgr --create --disk /dev/nvme0n1 --part 5 --label 'Arch linux' --loader '
 kscreen-doctor output.eDP-1.mode.2560x1440@165
 kscreen-doctor output.eDP-1.mode.2560x1440@144
 kscreen-doctor output.eDP-1.mode.2560x1440@60
+
+## Change fan speed
+echo 0,0 | sudo tee /sys/module/linuwu_sense/drivers/platform:acer-wmi/acer-wmi/nitro_sense/fan_speed

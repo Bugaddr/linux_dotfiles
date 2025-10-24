@@ -3,8 +3,7 @@
   "layer": "top",
   "position": "bottom",
   // "height": 21,
-  // "spacing": 0,
-
+  "spacing": 0,
   // Module groups
   "modules-left": [
     "hyprland/workspaces"
@@ -14,24 +13,57 @@
   ],
   "modules-right": [
     "pulseaudio",
+    "bluetooth",
     "network",
+    "memory",
     "cpu",
     "temperature",
-    "memory",
     "backlight",
     "battery"
   ],
 
+"bluetooth": {
+    "format-on": "󰂯 on",
+    "format-disabled": "󰂯 off",
+    "format-off": "󰂯 off",
+    "format-connected-battery": "󰂯󰁹 {device_battery_percentage}%",
+    "on-click": "blueman-manager",
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+},
+
+"pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "format-bluetooth-muted": "{icon} {volume}%",
+    "format-muted": "{icon} {volume}%",
+    "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", "", ""],
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "reverse-scrolling": true,
+    "ignored-sinks": ["Easy Effects Sink"]
+},
+
   // Workspaces
   "hyprland/workspaces": {
     "on-click": "activate",
-    "format": "{icon}",
+    "format": "{id}",
     "format-icons": {
-      "1": "",
-      "2": "󰈹",
+      "1": "",
+      "2": "",
       "3": "",
-      "4": "",
-      "5": "󰭹",
+      "4": "󰝚",
+      "5": "󰍡",
       "urgent": "",
       // "active": "",
       "default": ""
@@ -41,9 +73,9 @@
     "on-scroll-up": "hyprctl dispatch workspace e+1",
     "on-scroll-down": "hyprctl dispatch workspace e-1",
     "sort-by-number": true,
-    "persistent-workspaces": {
-      "*": 5
-    }
+    //"persistent-workspaces": {
+    //  "*": 5
+    //}
   },
 
   // Clock
@@ -72,35 +104,13 @@
                     }
   },
 
-  // Audio
-  "pulseaudio": {
-    "format": "{icon} {volume}%",
-    "format-bluetooth": "{icon}󰂯 {volume}%",
-    "format-muted": "",
-    "format-icons": {
-      "headphone": "󰋋",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "phone-muted": "",
-      "portable": "",
-      "car": "",
-      "default": ["", ""]
-    },
-    "scroll-step": 1,
-    "on-click": "pavucontrol",
-    "reverse-scrolling": true,
-    "ignored-sinks": ["Easy Effects Sink"]
-  },
-
   // Network
   "network": {
-    "format-wifi": "󰖩 {essid} {signalStrength}%",
+    "format-wifi": "󰖩 {signalStrength}%",
     "format-ethernet": "󰈀 {ipaddr}/{cidr}",
-    "tooltip-format": "󰈀 {ifname} via {gwaddr}",
+    "tooltip-format": "󰈀 {ifname} via {gwaddr} ({essid} {ipaddr}/{cidr})",
     "format-linked": "󰈀 {ifname} (No IP)",
     "format-disconnected": "󰌙 Disconnected",
-    "format-alt": "{ifname}: {ipaddr}/{cidr}"
   },
 
   // CPU
@@ -117,8 +127,9 @@
 
   // Memory
   "memory": {
-    "interval": 30,
-    "format": " {used:0.1f}G"
+    "interval": 60,
+    "format": " {}%",
+    "tooltip-format": "RAM: {used:0.1f}G used / {total:0.1f}G total ({percentage}%)\nSwap: {swapUsed:0.1f}G used / {swapTotal:0.1f}G total ({swapPercentage}%)",
   },
 
   // Backlight

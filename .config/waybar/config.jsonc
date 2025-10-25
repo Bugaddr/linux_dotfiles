@@ -2,7 +2,7 @@
   // Bar settings
   "layer": "top",
   "position": "bottom",
-  // "height": 21,
+  "margin": "0 0 0 0",
   "spacing": 0,
   // Module groups
   "modules-left": [
@@ -121,6 +121,7 @@
 
   // Temperature
   "temperature": {
+    "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon7/temp1_input",
     "critical-threshold": 80,
     "format": "{temperatureC}°C"
   },

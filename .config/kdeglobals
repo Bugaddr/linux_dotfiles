@@ -141,7 +141,6 @@ History Items[$e]=file:$HOME/Junk/a2z_app,file:$HOME/Junk,file:$HOME/Junk/a2z_ol
 Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00j\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
 
 [General]
-ColorScheme=BreezeDark
 ColorSchemeHash=2c3f86428c11011a7c64ee1e7f47c274d498ff10
 UseSystemBell=true
 XftAntialias=true
@@ -149,10 +148,9 @@ XftHintStyle=hintslight
 XftSubPixel=rgb
 fixed=JetBrainsMono Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
-[Icons]
-Theme=breeze-dark
-
 [KDE]
+AutomaticLookAndFeel=true
+LookAndFeelPackage=org.kde.breezedark.desktop
 SingleClick=false
 
 [KFileDialog Settings]

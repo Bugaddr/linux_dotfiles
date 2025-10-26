@@ -5,18 +5,18 @@ if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
   echo "Select desktop environment:"
   echo "1) Hyprland"
   echo "2) Plasma"
-  echo "3) TTY (no GUI)"
+  echo "3) TTY"
   read -r choice
 
   case $choice in
     1)
-      exec Hyprland >/dev/null
+      exec hyprland >/dev/null
       ;;
     2)
-      exec startplasma-wayland
+      exec dbus-run-session startplasma-wayland
       ;;
     3)
-      # Stay in TTY
+      true
       ;;
     *)
       echo "Invalid choice, staying in TTY"

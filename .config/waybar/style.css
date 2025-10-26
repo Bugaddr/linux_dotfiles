@@ -49,10 +49,6 @@ button:hover,
 }
 
 /* --- Workspaces --- */
-/*#workspaces {
-    margin: 0 4px;
-}*/
-
 #workspaces button {
     padding: 1px;
     background-color: transparent;
@@ -73,6 +69,11 @@ button:hover,
 #workspaces button.urgent {
     background-color: @red;
     color: @foreground;
+}
+
+#workspaces button.special {
+    background-color: @orange;
+    color: @background;
 }
 
 /* --- Specific Module States --- */

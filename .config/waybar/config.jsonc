@@ -1,6 +1,6 @@
 {
   // Bar settings
-  "layer": "top",
+  "layer": "bottom",
   "position": "bottom",
   "margin": "0 0 0 0",
   "spacing": 1,

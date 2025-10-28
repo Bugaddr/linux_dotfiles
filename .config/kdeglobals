@@ -151,6 +151,7 @@ fixed=JetBrainsMono Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 [KDE]
 AutomaticLookAndFeel=true
 LookAndFeelPackage=org.kde.breezedark.desktop
+ShowDeleteCommand=false
 SingleClick=false
 
 [KFileDialog Settings]

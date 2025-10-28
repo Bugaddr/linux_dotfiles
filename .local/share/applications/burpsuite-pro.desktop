@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=Development;Security
+Comment[en_US]=Burp Suite is an integrated platform for attacking web applications (professional edition)
+Comment=Burp Suite is an integrated platform for attacking web applications (professional edition)
+Exec=/home/bugaddr/.local/bin/burppro
+GenericName[en_US]=
+GenericName=
+Icon=burpsuite-pro
+MimeType=
+Name[en_US]=Burp Suite Professional
+Name=Burp Suite Professional
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-KDE-SubstituteUID=false
+X-KDE-Username=

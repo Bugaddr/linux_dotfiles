@@ -98,3 +98,6 @@ cat /sys/bus/pci/devices/0000:01:00.0/power/runtime_status
 
 ## Set wifi region
 sudo iw reg set BO
+
+## List big files
+fd -t f -S +50m --exec-batch ls -lh | awk '{print $5, $9}' | sort -rh

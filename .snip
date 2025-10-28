@@ -101,3 +101,14 @@ sudo iw reg set BO
 
 ## List big files
 fd -t f -S +50m --exec-batch ls -lh | awk '{print $5, $9}' | sort -rh
+
+## Setup dotfiles
+git init --bare ~/.dotfiles
+alias dot='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+dot config status.showUntrackedFiles no
+
+## Restore dotfiles
+git clone --bare <git-repo-url> $HOME/.dotfiles
+alias dot='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+dot checkout
+dot config --local status.showUntrackedFiles no

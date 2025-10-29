@@ -102,13 +102,16 @@ sudo iw reg set BO
 ## List big files
 fd -t f -S +50m --exec-batch ls -lh | awk '{print $5, $9}' | sort -rh
 
-## Setup dotfiles
-git init --bare ~/.dotfiles
-alias dot='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
-dot config status.showUntrackedFiles no
+## Setup dotfiles (first time creating locally)
+git init --bare $HOME/.dotfiles
+alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+dot config --local status.showUntrackedFiles no
+git remote add origin git@github.com:Bugaddr/linux_dotfiles.git
+git commit -a; git push
 
 ## Restore dotfiles
-git clone --bare <git-repo-url> $HOME/.dotfiles
-alias dot='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+git clone --bare git@github.com:Bugaddr/linux_dotfiles.git $HOME/.dotfiles
+alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+mkdir -p ~/.dotfiles-backup && dot checkout 2>&1 | awk '/^\s+\./{print $1}' | xargs -I{} sh -c 'mkdir -p ~/.dotfiles-backup/$(dirname "{}") && mv ~/"{}" ~/.dotfiles-backup/"{}"'
 dot checkout
 dot config --local status.showUntrackedFiles no

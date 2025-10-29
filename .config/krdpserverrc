@@ -1,0 +1,3 @@
+[General]
+Certificate=/home/bugaddr/.local/share/krdpserver/krdp.crt
+CertificateKey=/home/bugaddr/.local/share/krdpserver/krdp.key

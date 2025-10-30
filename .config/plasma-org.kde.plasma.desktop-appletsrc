@@ -5,6 +5,7 @@ RightButton;NoModifier=org.kde.contextmenu
 RightButton;NoModifier=org.kde.contextmenu
 
 [Containments][1]
+ItemGeometries-1707x960=
 ItemGeometries-2048x1152=
 ItemGeometriesHorizontal=
 activityId=a032c2b8-a89c-4c8b-a023-1d268068c636
@@ -68,7 +69,7 @@ immutability=1
 plugin=org.kde.plasma.icontasks
 
 [Containments][2][Applets][5][Configuration][General]
-launchers=preferred://browser
+launchers=
 
 [Containments][2][Applets][6]
 immutability=1
@@ -132,6 +133,9 @@ plugin=org.kde.plasma.keyboardindicator
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
+[Containments][2][Applets][7][Applets][19][Configuration]
+PreloadWeight=60
+
 [Containments][2][Applets][7][Applets][20]
 immutability=1
 plugin=org.kde.kscreen
@@ -141,15 +145,28 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][2][Applets][7][Applets][23][Configuration]
-PreloadWeight=55
+PreloadWeight=15
 
 [Containments][2][Applets][7][Applets][24]
 immutability=1
 plugin=org.kde.plasma.battery
 
+[Containments][2][Applets][7][Applets][24][Configuration]
+PreloadWeight=20
+
 [Containments][2][Applets][7][Applets][25]
 immutability=1
 plugin=org.kde.plasma.brightness
+
+[Containments][2][Applets][7][Applets][25][Configuration]
+PreloadWeight=10
+
+[Containments][2][Applets][7][Applets][26]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
+[Containments][2][Applets][7][Applets][26][Configuration]
+PreloadWeight=42
 
 [Containments][2][Applets][7][Applets][8]
 immutability=1

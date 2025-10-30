@@ -1,29 +1,17 @@
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
 
-# Start ssh agent (https://rabexc.org/posts/pitfalls-of-ssh-agents)
-# Check if ssh-add -l returns exit status 2 (no identities found)
-if ! ssh-add -l &>/dev/null; then
-  # Check if ~/.ssh-agent exists and is readable
-  if [ -r ~/.ssh-agent ]; then
-    # Load variables from ~/.ssh-agent
-    eval $(<~/.ssh-agent) >/dev/null
-    # Check again if ssh-add -l returns exit status 2
-    if ! ssh-add -l &>/dev/null; then
-      # If still no identities found, start a new ssh-agent
-      (umask 066; ssh-agent > ~/.ssh-agent)
-      eval $(<~/.ssh-agent) >/dev/null
-      # Add SSH identities
-      ssh-add
-    fi
-  else
-    # If ~/.ssh-agent doesn't exist, start a new ssh-agent
-    (umask 066; ssh-agent > ~/.ssh-agent)
-    eval $(<~/.ssh-agent) >/dev/null
-    # Add SSH identities
-    ssh-add
-  fi
-fi
+# If you come from bash you might have to change your $PATH.
+export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
+# Functions
+aur(){ 
+	d=$(mktemp -d); cd $d
+	git clone https://aur.archlinux.org/$1.git
+	cd $1; makepkg -si --noconfirm
+	cd; rm -rf $d
+}
 
 # My alias
 alias hybrid='sudo envycontrol -s hybrid --rtd3 2 --force-comp --verbose'

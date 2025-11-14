@@ -1,7 +1,7 @@
 [Desktop Entry]
 Categories=AudioVideo;Player;Recorder;
 Comment=Read, capture, broadcast your multimedia streams
-Exec=/home/bugaddr/.local/bin/vlchidpi --started-from-file %U
+Exec=env QT_SCALE_FACTOR=0.75 /usr/bin/vlc --started-from-file %U
 GenericName=Media player
 Icon=vlc
 Keywords=Player;Capture;DVD;Audio;Video;Server;Broadcast;

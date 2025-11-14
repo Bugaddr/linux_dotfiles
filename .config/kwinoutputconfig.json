@@ -5,7 +5,7 @@
                 "allowDdcCi": true,
                 "allowSdrSoftwareBrightness": false,
                 "autoRotation": "InTabletMode",
-                "brightness": 0.35,
+                "brightness": 0.65,
                 "colorPowerTradeoff": "PreferEfficiency",
                 "colorProfileSource": "ICC",
                 "connectorName": "eDP-1",
@@ -38,6 +38,21 @@
         "data": [
             {
                 "lidClosed": false,
+                "outputs": [
+                    {
+                        "enabled": true,
+                        "outputIndex": 0,
+                        "position": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "priority": 0,
+                        "replicationSource": ""
+                    }
+                ]
+            },
+            {
+                "lidClosed": true,
                 "outputs": [
                     {
                         "enabled": true,

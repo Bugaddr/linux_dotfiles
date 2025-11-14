@@ -1,6 +1,18 @@
+[ExtractDialog]
+1707x960 screen: Height=540
+1707x960 screen: Width=1138
+DirHistory[$e]=$HOME/Downloads/Firefox/dd/
+
 [General]
+OpenExternallyCalledFolderInNewTab=true
+RememberOpenedTabs=false
+ShowFullPath=true
+ShowStatusBar=FullWidth
 Version=202
 ViewPropsTimestamp=2025,10,30,11,49,12.445
+
+[IconsMode]
+PreviewSize=96
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
@@ -8,3 +20,6 @@ Places Icons Static Size=22
 
 [MainWindow]
 MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=windowsimagethumbnail,ebookthumbnail,exrthumbnail,comicbookthumbnail,audiothumbnail,jpegthumbnail,cursorthumbnail,appimagethumbnail,djvuthumbnail,imagethumbnail,directorythumbnail,kraorathumbnail,fontthumbnail,svgthumbnail,opendocumentthumbnail,windowsexethumbnail,glycin-image-rs,glycin-svg,glycin-jxl,heif,glycin-heif

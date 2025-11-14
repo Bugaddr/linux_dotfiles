@@ -42,7 +42,7 @@ watch -n0.5 cat /sys/class/power_supply/BAT1/uevent
 upower -i /org/freedesktop/UPower/devices/battery_BAT1
 
 ## Burp
-exec "$JAVA_HOME/bin/java" --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED --add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED --add-opens=java.base/jdk.internal.org.objectweb.asm.Opcodes=ALL-UNNAMED -javaagent:/bin/loader.jar -noverify -jar /usr/share/burpsuite-pro/burpsuite-pro.jar "$@"
+exec "$JAVA_HOME/bin/java" --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED --add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED --add-opens=java.base/jdk.internal.org.objectweb.asm.Opcodes=ALL-UNNAMED -javaagent:/home/bugaddr/.config/dotfiles_assets/burp_keygen.jar -noverify -jar /usr/share/burpsuite-pro/burpsuite-pro.jar "$@"
 
 ## Firefox with vaapi for hybrid mode
 MOZ_DISABLE_RDD_SANDBOX=1 LIBVA_DRIVER_NAME=nvidia NVD_GPU=0 prime-run firefox
@@ -115,3 +115,6 @@ alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 mkdir -p ~/.dotfiles-backup && dot checkout 2>&1 | awk '/^\s+\./{print $1}' | xargs -I{} sh -c 'mkdir -p ~/.dotfiles-backup/$(dirname "{}") && mv ~/"{}" ~/.dotfiles-backup/"{}"'
 dot checkout
 dot config --local status.showUntrackedFiles no
+
+## Remove explicit packages
+pacman -Qeq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rcns

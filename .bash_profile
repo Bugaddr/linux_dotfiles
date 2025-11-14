@@ -16,7 +16,7 @@ if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
       exec hyprland >/dev/null
       ;;
     2)
-      exec dbus-run-session startplasma-wayland
+      exec startplasma-wayland
       ;;
     3)
       true

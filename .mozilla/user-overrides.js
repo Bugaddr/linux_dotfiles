@@ -38,3 +38,9 @@ user_pref("network.trr.uri", "https://family.cloudflare-dns.com/dns-query");  //
 user_pref("media.hardware-video-decoding.force-enabled", true);  // Enable VA-API hardware video decoding
 user_pref("gfx.x11-egl.force-enabled", true);  // Force EGL on X11
 user_pref("widget.dmabuf.force-enabled", true);  // Enable DMA-BUF for better rendering
+
+// History and cookies
+user_pref("privacy.clearOnShutdown_v2.browsingHistoryAndDownloads", true); 
+user_pref("privacy.clearOnShutdown_v2.downloads", true);
+user_pref("privacy.clearSiteData.browsingHistoryAndDownloads", true);
+user_pref("privacy.clearHistory.browsingHistoryAndDownloads", true);

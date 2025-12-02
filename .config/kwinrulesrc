@@ -20,7 +20,7 @@ count=2
 rules=ad16b794-6db1-4605-a060-aab6cc9a88d1,1cf68fac-eaef-463a-b891-e1ca2156b971
 
 [ad16b794-6db1-4605-a060-aab6cc9a88d1]
-Description=Window settings for firefox
+Description=Window settings for firefox picture-in-picture mode
 above=true
 aboverule=2
 skipswitcher=true

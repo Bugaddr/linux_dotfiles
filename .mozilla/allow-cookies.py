@@ -76,8 +76,8 @@ if __name__ == "__main__":
         "https://chat.deepseek.com",
         "https://www.swiggy.com",
         "https://auth.ente.io",
-        "https://claude.ai/new",
-        "https://feedly.com/"
+        "https://claude.ai",
+        "https://feedly.com"
     ]
 
     # Update permissions for each website

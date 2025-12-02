@@ -16,3 +16,6 @@
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+[alias]
+	bug = !git config user.name \"bugaddr\" && git config user.email \"75427894+Bugaddr@users.noreply.github.com\" && ssh-add -D && ssh-add ~/.ssh/bugaddr
+	jrc = !git config --local user.name \"jrchintu\" && git config --local user.email \"jrchintu@proton.me\" && ssh-add -D && ssh-add ~/.ssh/jrchintu

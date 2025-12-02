@@ -1,5 +1,8 @@
+[GuiConfig]
+quitAfterSaveCopyExport=true
+
 [ImageSave]
-lastImageSaveLocation=file:///home/bugaddr/Pictures/Screenshots/Screenshot_20251110_162704.png
+lastImageSaveLocation=file:///home/bugaddr/Pictures/Screenshots/Screenshot_20251114_165436.png
 translatedScreenshotsFolder=Screenshots
 
 [VideoSave]

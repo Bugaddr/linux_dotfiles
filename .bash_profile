@@ -1,14 +1,15 @@
 #
 # ~/.bash_profile
 #
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
 # Start hyprland
 if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
   echo "Select desktop environment:"
   echo "1) Hyprland"
   echo "2) Plasma"
-  echo "3) TTY"
+  echo "3) Niri"
+  echo "4) TTY"
   read -r choice
 
   case $choice in
@@ -19,6 +20,9 @@ if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
       exec startplasma-wayland
       ;;
     3)
+      exec niri-session >/dev/null
+      ;;
+    4)
       true
       ;;
     *)
@@ -26,9 +30,5 @@ if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
       ;;
   esac
 fi
-
-LIBVA_DRIVER_NAME=iHD
-VDPAU_DRIVER=va_gl
-VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc

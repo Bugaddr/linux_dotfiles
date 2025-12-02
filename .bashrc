@@ -1,9 +1,11 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# If you come from bash you might have to change your $PATH.
-export PATH="$HOME/.local/bin:/usr/local/bin:$PATH"
+# Exports
+export GOPATH="$HOME/.go"
+export PATH="$PATH:$GOPATH/bin:$HOME/.local/bin:/usr/local/bin"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+export PS1="\[\e[1;32m\]\u@\h\[\e[0m\] \[\e[1;34m\]\w\[\e[0m\] \$(if [ \$? -eq 0 ]; then echo -e '\[\e[1;32m\]\$'; else echo -e '\[\e[1;31m\]\$'; fi)\[\e[0m\] "
 
 # Functions
 aur(){ 
@@ -13,9 +15,9 @@ aur(){
 	cd; rm -rf $d
 }
 
-# My alias
+# Alias
 alias nvidia='sudo envycontrol -s nvidia --force-comp --verbose'
-alias hybrid='sudo envycontrol -s hybrid --rtd3 2 --verbose'
+alias hybrid='sudo envycontrol -s hybrid --rtd3 3 --verbose'
 alias intel='sudo envycontrol -s integrated --verbose'
 alias cdtemp='cd $(mktemp -d)'
 alias updatemirror='sudo reflector --protocol https --latest 20 --age 24 --sort rate --verbose --country IN,SG --save /etc/pacman.d/mirrorlist'
@@ -35,3 +37,7 @@ alias 144='hyprctl keyword monitor eDP-1,2560x1440@144,auto,auto; kscreen-doctor
 alias 165='hyprctl keyword monitor eDP-1,2560x1440@165,auto,auto; kscreen-doctor output.eDP-1.mode.2560x1440@165'
 alias nano='nvim'
 alias snip='less ~/.snip'
+alias nvperf='echo performance | sudo tee /sys/module/pcie_aspm/parameters/policy'
+alias nvdef='echo default | sudo tee /sys/module/pcie_aspm/parameters/policy'
+alias nveco='echo powersupersave | tee /sys/module/pcie_aspm/parameters/policy'
+alias np='cat /sys/module/pcie_aspm/parameters/policy'

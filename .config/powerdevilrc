@@ -7,9 +7,5 @@ PowerProfile=balanced
 [BatteryManagement]
 BatteryCriticalAction=1
 
-[LowBattery][Display]
-DisplayBrightness=12
-UseProfileSpecificDisplayBrightness=false
-
 [LowBattery][Performance]
 PowerProfile=power-saver

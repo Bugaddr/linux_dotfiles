@@ -5,7 +5,7 @@
 export GOPATH="$HOME/.go"
 export PATH="$PATH:$GOPATH/bin:$HOME/.local/bin:/usr/local/bin"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-export PS1="\[\e[1;32m\]\u@\h\[\e[0m\] \[\e[1;34m\]\w\[\e[0m\] \$(if [ \$? -eq 0 ]; then echo -e '\[\e[1;32m\]\$'; else echo -e '\[\e[1;31m\]\$'; fi)\[\e[0m\] "
+export PS1="\[\e[1;32m\]\u@\h\[\e[0m\] \[\e[1;34m\]\w\[\e[0m\] \$( [ \$? -eq 0 ] && c='\[\e[1;32m\]' || c='\[\e[1;31m\]'; [ \$(id -u) -eq 0 ] && echo -e \"\$c#\" || echo -e \"\$c\$\" )\[\e[0m\] "
 
 # Functions
 aur(){ 

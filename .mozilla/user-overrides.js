@@ -33,7 +33,7 @@ user_pref("media.ffmpeg.vaapi.enabled", true); // Explicitly enable VA-API FF<13
 user_pref("media.hardware-video-decoding.force-enabled", true); // Force HW decoding FF<137
 user_pref("widget.dmabuf.force-enabled", true); // Enable DMABuf
 user_pref("gfx.webrender.all", true); // Force WebRender (Recommended for NVIDIA)
-user_pred("gfx.webrender.layer-compositor", true); // Fix slow youtube
+user_pref("gfx.webrender.layer-compositor", true); // Fix slow youtube
 
 /** HISTORY & SANITIZATION **/
 user_pref("privacy.clearHistory.browsingHistoryAndDownloads", true);

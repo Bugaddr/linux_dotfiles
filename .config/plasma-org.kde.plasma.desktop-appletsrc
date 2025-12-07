@@ -21,7 +21,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][1][General]
-positions={"1707x960":["1","15","desktop:/org.kde.dolphin.desktop","0","2","desktop:/systemsettings.desktop","0","1","desktop:/firefox.desktop","0","0"],"2048x1152":["1","18"]}
+positions={"1707x960":["1","15","desktop:/systemsettings.desktop","0","1","desktop:/firefox.desktop","0","0","desktop:/org.kde.dolphin.desktop","0","2"],"2048x1152":["1","18"]}
 sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.color][General]
@@ -185,6 +185,9 @@ plugin=org.kde.plasma.networkmanagement
 [Containments][2][Applets][7][Applets][19][Configuration]
 PreloadWeight=100
 
+[Containments][2][Applets][7][Applets][19][Configuration][General]
+currentDetailsTab=details
+
 [Containments][2][Applets][7][Applets][20]
 immutability=1
 plugin=org.kde.kscreen
@@ -197,7 +200,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][2][Applets][7][Applets][23][Configuration]
-PreloadWeight=10
+PreloadWeight=40
 
 [Containments][2][Applets][7][Applets][24]
 immutability=1
@@ -250,4 +253,4 @@ AppletOrder=3;4;5;6;7;21;22
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/org.kde.dolphin.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/vlc.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/systemsettings.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.konsole.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/firefox.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636
+screenMapping=desktop:/org.kde.dolphin.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/firefox.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.konsole.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/vlc.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/systemsettings.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636

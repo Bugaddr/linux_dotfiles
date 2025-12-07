@@ -24,5 +24,8 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][da0046e7-bcf8-471c-a7f5-668261fb8659][dfec8e86-6989-41f6-89ac-e77dbf3aba54]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Windows]
+FocusStealingPreventionLevel=0
+
 [Xwayland]
 Scale=1.5

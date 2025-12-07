@@ -31,6 +31,7 @@ alias balanced='echo balanced | sudo tee /sys/firmware/acpi/platform_profile; po
 alias performance='echo balanced-performance | sudo tee /sys/firmware/acpi/platform_profile; powerprofilesctl set performance'
 alias pp='cat /sys/firmware/acpi/platform_profile'
 alias dot='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+alias dota='dot commit -a -m push'
 alias suspend='systemctl suspend'
 alias 60='hyprctl keyword monitor eDP-1,2560x1440@60,auto,auto; kscreen-doctor output.eDP-1.mode.2560x1440@60'
 alias 144='hyprctl keyword monitor eDP-1,2560x1440@144,auto,auto; kscreen-doctor output.eDP-1.mode.2560x1440@144'

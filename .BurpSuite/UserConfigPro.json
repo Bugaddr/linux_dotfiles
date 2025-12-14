@@ -6,6 +6,9 @@
         "bchecks":{
             "imported_scripts":[]
         },
+        "comparer":{
+            "sync_views":false
+        },
         "connections":{
             "platform_authentication":{
                 "credentials":[],
@@ -177,6 +180,10 @@
                 {
                     "action":"editor_copy",
                     "hotkey":"Ctrl+C"
+                },
+                {
+                    "action":"editor_copy_prettified",
+                    "hotkey":"Ctrl+Alt+C"
                 },
                 {
                     "action":"editor_paste",

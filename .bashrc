@@ -9,10 +9,9 @@ export PS1="\[\e[1;32m\]\u@\h\[\e[0m\] \[\e[1;34m\]\w\[\e[0m\] \$( [ \$? -eq 0 ]
 
 # Functions
 aur(){ 
-	d=$(mktemp -d); cd $d
+	cd ~/.cache
 	git clone https://aur.archlinux.org/$1.git
 	cd $1; makepkg -si --noconfirm
-	cd; rm -rf $d
 }
 
 # Alias
@@ -42,3 +41,4 @@ alias nvperf='echo performance | sudo tee /sys/module/pcie_aspm/parameters/polic
 alias nvdef='echo default | sudo tee /sys/module/pcie_aspm/parameters/policy'
 alias nveco='echo powersupersave | tee /sys/module/pcie_aspm/parameters/policy'
 alias np='cat /sys/module/pcie_aspm/parameters/policy'
+alias rmnm='fd -td node_modules -x rm -rifv'

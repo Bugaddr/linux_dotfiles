@@ -120,3 +120,13 @@ dot config --local status.showUntrackedFiles no
 
 ## Remove explicit packages
 pacman -Qeq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rcns
+
+## Brown noise generator
+play -c 2 -n synth brownnoise lowpass -1 480 highpass -1 100
+
+## Jio dns server
+49.45.45.156 or 49.45.45.157
+
+## Disable turbo permanently
+echo "1" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
+

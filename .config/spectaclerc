@@ -1,8 +1,12 @@
+[General]
+autoSaveImage=true
+clipboardGroup=PostScreenshotCopyImage
+
 [GuiConfig]
 quitAfterSaveCopyExport=true
 
 [ImageSave]
-lastImageSaveLocation=file:///home/bugaddr/Pictures/Screenshots/Screenshot_20251114_165436.png
+lastImageSaveLocation=file:///home/bugaddr/Pictures/Screenshots/Screenshot_20251213_222335.png
 translatedScreenshotsFolder=Screenshots
 
 [VideoSave]

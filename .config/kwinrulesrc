@@ -19,6 +19,19 @@ aboverule=3
 count=2
 rules=ad16b794-6db1-4605-a060-aab6cc9a88d1,1cf68fac-eaef-463a-b891-e1ca2156b971
 
+[a3026048-626e-4b74-b674-079e8623ecaf]
+Description=Pomodoro Border Timer
+above=true
+aboverule=2
+acceptfocus=false
+acceptfocusrule=2
+skippager=true
+skippagerrule=2
+skiptaskbar=true
+skiptaskbarrule=2
+wmclass=pomo-border-timer
+wmclassmatch=1
+
 [ad16b794-6db1-4605-a060-aab6cc9a88d1]
 Description=Window settings for firefox picture-in-picture mode
 above=true
@@ -39,4 +52,19 @@ title=Picture-in-Picture
 titlematch=1
 types=1
 wmclass=firefox
+wmclassmatch=1
+
+[pomo-timer-fixed-v2]
+Description=Pomodoro Fixed Bottom
+above=true
+aboverule=2
+obeygeometryrestrictions=false
+obeygeometryrestrictionsrule=2
+position=0,1438
+positionrule=2
+skippager=true
+skippagerrule=2
+skiptaskbar=true
+skiptaskbarrule=2
+wmclass=PomoTimerFixed
 wmclassmatch=1

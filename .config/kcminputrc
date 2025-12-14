@@ -1,5 +1,11 @@
+[Libinput][1267][12632][ELAN050A:01 04F3:3158 Mouse]
+PointerAcceleration=0.000
+
 [Libinput][1267][12632][ELAN050A:01 04F3:3158 Touchpad]
 Enabled=true
 NaturalScroll=true
 PointerAcceleration=0.000
 PointerAccelerationProfile=2
+
+[Libinput][1578][16641][Newmen Tech.,LTD 2.4G Wireless Mouse]
+PointerAcceleration=0.000

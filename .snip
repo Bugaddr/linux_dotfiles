@@ -1,5 +1,5 @@
 ## Delete junk
-pacman -Qqd | sudo pacman -Rsu -
+sudo pacman -Rns $(pacman -Qtdq)
 
 ## Blackarch overwrite
 sudo pacman -Syyu --needed --overwrite='*'
@@ -79,7 +79,7 @@ for f in *; do
 done
 
 ## Nvidia services
-sudo systemctl status nvidia-suspend nvidia-resume nvidia-powerd
+sudo systemctl status nvidia-suspend nvidia-resume nvidia-powerd nvidia-persistenced
 
 ## Efibootmgr
 efibootmgr --create --disk /dev/nvme0n1 --part 5 --label 'Arch linux' --loader '\EFI\Linux\arch-linux.efi' --unicode

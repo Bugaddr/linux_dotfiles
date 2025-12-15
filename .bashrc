@@ -8,10 +8,11 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export PS1="\[\e[1;32m\]\u@\h\[\e[0m\] \[\e[1;34m\]\w\[\e[0m\] \$( [ \$? -eq 0 ] && c='\[\e[1;32m\]' || c='\[\e[1;31m\]'; [ \$(id -u) -eq 0 ] && echo -e \"\$c#\" || echo -e \"\$c\$\" )\[\e[0m\] "
 
 # Functions
-aur(){ 
-	cd ~/.cache
-	git clone https://aur.archlinux.org/$1.git
-	cd $1; makepkg -si --noconfirm
+aur(){
+    cd ~/.cache || return
+    git clone https://aur.archlinux.org/$1.git || return
+    cd $1 || return
+    makepkg -si --noconfirm; cd -
 }
 
 # Alias

@@ -209,7 +209,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][2][Applets][7][Applets][24][Configuration]
-PreloadWeight=10
+PreloadWeight=0
 
 [Containments][2][Applets][7][Applets][24][Configuration][General]
 showPercentage=true
@@ -261,4 +261,4 @@ AppletOrder=3;4;5;6;7;21;22
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/org.kde.kinfocenter.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/chromium.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.telegram.desktop.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.kcalc.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.konsole.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.dolphin.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/systemsettings.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/vlc.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/firefox.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/burpsuite-pro.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/code-oss.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.wireshark.Wireshark.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636
+screenMapping=desktop:/burpsuite-pro.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.konsole.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.wireshark.Wireshark.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/code-oss.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.dolphin.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/vlc.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/firefox.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/systemsettings.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.kcalc.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/chromium.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.kinfocenter.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.telegram.desktop.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636

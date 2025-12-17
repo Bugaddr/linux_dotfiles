@@ -409,10 +409,10 @@
 #sout-x264-stats=x264_2pass.log
 
 # Default preset setting used (string)
-sout-x264-preset=ultrafast
+#sout-x264-preset=
 
 # Default tune setting used (string)
-sout-x264-tune=film
+#sout-x264-tune=
 
 # x264 advanced options (string)
 #sout-x264-options=
@@ -481,7 +481,7 @@ sout-x264-tune=film
 #avcodec-codec=
 
 # Hardware decoding (string)
-avcodec-hw=vdpau_avcodec
+#avcodec-hw=any
 
 # Threads (integer)
 #avcodec-threads=0
@@ -3593,7 +3593,7 @@ avcodec-hw=vdpau_avcodec
 [freetype] # Freetype2 font renderer
 
 # Font (string)
-freetype-font=Noto Sans
+#freetype-font=Serif Bold
 
 # Monospace Font (string)
 #freetype-monofont=Monospace
@@ -3812,7 +3812,7 @@ freetype-font=Noto Sans
 #qt-recentplay-filter=
 
 # Continue playback? (integer)
-#qt-continue=1
+qt-continue=2
 
 # Embed the file browser in open dialog (boolean)
 #qt-embedded-open=0
@@ -4334,7 +4334,7 @@ qt-privacy-ask=0
 #packetizer=
 
 # VoD server module (string)
-#vod-server=
+vod-server=any
 
 # Use a plugins cache (boolean)
 #plugins-cache=1

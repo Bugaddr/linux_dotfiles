@@ -1,0 +1,2 @@
+#!/bin/bash
+export KWIN_DRM_DEVICES=/dev/dri/intel-igpu:/dev/dri/nvidia-dgpu

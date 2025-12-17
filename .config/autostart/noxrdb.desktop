@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=NoXRDB
+Exec=/usr/bin/xrdb -remove
+StartupNotify=false
+OnlyShowIn=KDE;

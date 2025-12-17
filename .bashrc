@@ -12,7 +12,7 @@ aur(){
     cd ~/.cache || return
     git clone https://aur.archlinux.org/$1.git || return
     cd $1 || return
-    makepkg -si --noconfirm; cd -
+    makepkg -si; cd -
 }
 
 # Alias
@@ -43,3 +43,4 @@ alias nvdef='echo default | sudo tee /sys/module/pcie_aspm/parameters/policy'
 alias nveco='echo powersupersave | tee /sys/module/pcie_aspm/parameters/policy'
 alias np='cat /sys/module/pcie_aspm/parameters/policy'
 alias rmnm='fd -td node_modules -x rm -rifv'
+alias hibernate='systemctl hibernate'

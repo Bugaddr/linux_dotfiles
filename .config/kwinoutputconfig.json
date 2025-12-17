@@ -5,7 +5,7 @@
                 "allowDdcCi": true,
                 "allowSdrSoftwareBrightness": false,
                 "autoRotation": "InTabletMode",
-                "brightness": 0,
+                "brightness": 0.3,
                 "colorPowerTradeoff": "PreferEfficiency",
                 "colorProfileSource": "ICC",
                 "connectorName": "eDP-1",
@@ -28,7 +28,7 @@
                 "sdrGamutWideness": 0,
                 "transform": "Normal",
                 "uuid": "8eae5cab-8444-4e40-9a61-31cec73ee2aa",
-                "vrrPolicy": "Always",
+                "vrrPolicy": "Automatic",
                 "wideColorGamut": false
             }
         ],

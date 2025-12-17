@@ -1,7 +1,7 @@
 [Desktop Entry]
 Categories=AudioVideo;Player;Recorder;
 Comment=Read, capture, broadcast your multimedia streams
-Exec=env QT_SCALE_FACTOR=0.75 /usr/bin/vlc --started-from-file %U
+Exec=env QT_SCALE_FACTOR=1.5 /usr/bin/vlc --started-from-file %U
 GenericName=Media player
 Icon=vlc
 Keywords=Player;Capture;DVD;Audio;Video;Server;Broadcast;
@@ -9,7 +9,7 @@ MimeType=application/ogg;application/x-ogg;audio/ogg;audio/vorbis;audio/x-vorbis
 Name=VLC media player
 NoDisplay=false
 Path=
-PrefersNonDefaultGPU=true
+PrefersNonDefaultGPU=false
 StartupNotify=true
 Terminal=false
 TerminalOptions=

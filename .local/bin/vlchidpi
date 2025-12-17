@@ -1,3 +1,0 @@
-#!/bin/sh
-env QT_SCALE_FACTOR=0.75 /usr/bin/vlc "$@"
-#env QT_ENABLE_HIGHDPI_SCALING=0 QT_AUTO_SCREEN_SCALE_FACTOR=0 QT_SCALE_FACTOR=1.5 /usr/bin/vlc "$@"

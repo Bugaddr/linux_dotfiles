@@ -5,7 +5,7 @@
                 "allowDdcCi": true,
                 "allowSdrSoftwareBrightness": false,
                 "autoRotation": "InTabletMode",
-                "brightness": 0.3,
+                "brightness": 0.25,
                 "colorPowerTradeoff": "PreferEfficiency",
                 "colorProfileSource": "ICC",
                 "connectorName": "eDP-1",

@@ -7,6 +7,7 @@ Show Menu Bar=true
 Show Status Bar=true
 Show Tab Bar=true
 Show Url Nav Bar=true
+Show welcome view for new window=false
 
 [KTextEditor Renderer]
 Animate Bracket Matching=false
@@ -28,6 +29,8 @@ RunPrefix=
 SetEditor=false
 
 [MainWindow]
+1707x960 screen: Height=393
+1707x960 screen: Width=815
 1707x960 screen: Window-Maximized=true
 2 screens: Window-Maximized=true
 

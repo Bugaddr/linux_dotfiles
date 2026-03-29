@@ -131,7 +131,10 @@ play -c 2 -n synth brownnoise lowpass -1 480 highpass -1 100
 echo "1" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
 
 ## Check untracked dotfiles in specific directory
-dot ls-files --others --exclude-standard -- .config
+dot ls-files --others --exclude-standard -- .
 
 ## debug kwin
 qdbus6 org.kde.KWin /KWin org.kde.KWin.supportInformation
+
+## Hibernate parameters
+echo "resume=UUID=$(findmnt / -no UUID) resume_offset=$(sudo filefrag -v /swapfile | awk '{if($1=="0:"){print $4}}' | sed 's/\.\.//')"

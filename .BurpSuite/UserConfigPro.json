@@ -18,6 +18,7 @@
             "socks_proxy":{
                 "dns_over_socks":false,
                 "host":"",
+                "host_bypass_list":[],
                 "password":"",
                 "port":0,
                 "use_proxy":false,
@@ -38,6 +39,7 @@
                 "font_name":"Monospaced",
                 "font_size":10,
                 "font_smoothing":true,
+                "hide_decoded_text_on_hover":false,
                 "highlight_requests":true,
                 "highlight_responses":true,
                 "pretty_print_by_default":true
@@ -408,7 +410,6 @@
             ],
             "out_of_scope_history_logging_action":"prompt",
             "pause_tasks_at_startup_default":true,
-            "show_learn_tab":false,
             "submit_feedback":false,
             "suppress_confirm_on_close":true,
             "temporary_files_location":"",
@@ -486,6 +487,7 @@
             "client_certificates":{
                 "certificates":[]
             },
+            "custom_ca_certificates":[],
             "negotiation":{
                 "disable_sni_extension":false,
                 "enable_blocked_algorithms":true

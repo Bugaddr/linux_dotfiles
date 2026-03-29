@@ -4,8 +4,17 @@
             {
                 "allowDdcCi": true,
                 "allowSdrSoftwareBrightness": false,
+                "autoBrightnessCurve": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
                 "autoRotation": "InTabletMode",
-                "brightness": 0.25,
+                "automaticBrightness": false,
+                "brightness": 0.5,
                 "colorPowerTradeoff": "PreferEfficiency",
                 "colorProfileSource": "ICC",
                 "connectorName": "eDP-1",
@@ -26,6 +35,7 @@
                 "scale": 1.5,
                 "sdrBrightness": 200,
                 "sdrGamutWideness": 0,
+                "sharpness": 0,
                 "transform": "Normal",
                 "uuid": "8eae5cab-8444-4e40-9a61-31cec73ee2aa",
                 "vrrPolicy": "Automatic",
@@ -46,7 +56,22 @@
                             "x": 0,
                             "y": 0
                         },
-                        "priority": 0,
+                        "priority": 1,
+                        "replicationSource": ""
+                    }
+                ]
+            },
+            {
+                "lidClosed": true,
+                "outputs": [
+                    {
+                        "enabled": true,
+                        "outputIndex": 0,
+                        "position": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "priority": 1,
                         "replicationSource": ""
                     }
                 ]

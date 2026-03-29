@@ -135,13 +135,8 @@ ForegroundNormal=35,38,41
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
-[DirSelect Dialog]
-DirSelectDialog Size=884,600
-History Items[$e]=file:$HOME/Junk/a2z_app,file:$HOME/Junk,file:$HOME/Junk/a2z_old_sheet,file:$HOME/Junk/a2z_old_sheet,file:$HOME/Junk/articles,file:$HOME/Junk/sunscreen,file:$HOME/Documents/kiratwebd,file:$HOME/Documents/kiratwebd,file:$HOME/Documents/kiratwebd,file:$HOME/Junk/A2Z/2023DEC/20231203002954/takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2,file:$HOME/Documents/Git/dsa_playground,file:$HOME/Junk/test_uwu,file:$HOME/Junk,file:$HOME/Documents/Git/daily_digest,file:$HOME/Documents/Git/something,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Infosec_Writeups,file:$HOME/Documents/Git/Arc,file:$HOME/Documents/git/Infosec_Writeups,file:$HOME/Documents/git/Infosec_Writeups,file:$HOME/Videos/Obs,file:$HOME
-Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00j\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
-
 [General]
-ColorSchemeHash=2c3f86428c11011a7c64ee1e7f47c274d498ff10
+ColorSchemeHash=9f63c7711a13123582e720791ea0f8c0172977d2
 UseSystemBell=true
 XftAntialias=true
 XftHintStyle=hintslight
@@ -151,6 +146,8 @@ XftSubPixel=rgb
 AutomaticLookAndFeel=true
 ShowDeleteCommand=false
 SingleClick=false
+contrast=4
+frameContrast=0.2
 
 [KFileDialog Settings]
 Allow Expansion=false

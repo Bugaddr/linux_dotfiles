@@ -10,6 +10,7 @@ user_pref("browser.urlbar.suggest.topsites", false); // Clean up URL bar suggest
 user_pref("browser.vpn_promo.enabled", false); // Disable VPN promo
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false); // Remove recommendations in Add-ons manager
 user_pref("extensions.pocket.enabled", false); // Disable Pocket completely
+user_pref("identity.fxaccounts.toolbar.pxiToolbarEnabled", false); // Remove fx account ads
 
 /** MOUSE & BEHAVIOR **/
 user_pref("browser.ctrlTab.sortByRecentlyUsed", true); // Ctrl+Tab cycles by usage
@@ -40,3 +41,7 @@ user_pref("privacy.clearHistory.browsingHistoryAndDownloads", true);
 user_pref("privacy.clearOnShutdown_v2.browsingHistoryAndDownloads", true);
 user_pref("privacy.clearOnShutdown_v2.downloads", true);
 user_pref("privacy.clearSiteData.browsingHistoryAndDownloads", true);
+
+/** PDFJS **/
+user_pref("pdfjs.defaultZoomValue", "page-fit"); // Page fit
+user_pref("pdfjs.spreadModeOnLoad", "1"); // Odd spread

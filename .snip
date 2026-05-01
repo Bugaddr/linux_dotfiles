@@ -138,3 +138,11 @@ qdbus6 org.kde.KWin /KWin org.kde.KWin.supportInformation
 
 ## Hibernate parameters
 echo "resume=UUID=$(findmnt / -no UUID) resume_offset=$(sudo filefrag -v /swapfile | awk '{if($1=="0:"){print $4}}' | sed 's/\.\.//')"
+
+## Fan control (2=auto; 0=turbo; 1=custom)
+echo 2 | sudo tee /sys/class/hwmon/hwmon*/pwm*_enable
+echo 127 | sudo tee /sys/class/hwmon/hwmon*/pwm{1,2}
+
+## VMSTAT
+vmstat -S M 1
+

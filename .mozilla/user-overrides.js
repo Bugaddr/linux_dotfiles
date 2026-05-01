@@ -43,5 +43,5 @@ user_pref("privacy.clearOnShutdown_v2.downloads", true);
 user_pref("privacy.clearSiteData.browsingHistoryAndDownloads", true);
 
 /** PDFJS **/
-user_pref("pdfjs.defaultZoomValue", "page-fit"); // Page fit
+//user_pref("pdfjs.defaultZoomValue", "page-fit"); // Page fit
 user_pref("pdfjs.spreadModeOnLoad", "1"); // Odd spread

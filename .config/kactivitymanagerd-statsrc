@@ -2,7 +2,7 @@
 ordering=
 
 [Favorites-org.kde.plasma.kickoff.favorites.instance-3-a032c2b8-a89c-4c8b-a023-1d268068c636]
-ordering=applications:systemsettings.desktop,applications:org.kde.dolphin.desktop,applications:firefox.desktop
+ordering=applications:org.kde.dolphin.desktop,applications:firefox.desktop,applications:chromium.desktop
 
 [Favorites-org.kde.plasma.kickoff.favorites.instance-3-global]
-ordering=
+ordering=applications:org.kde.dolphin.desktop,applications:firefox.desktop,applications:chromium.desktop

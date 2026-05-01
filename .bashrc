@@ -25,7 +25,7 @@ alias wifite='sudo wifite -mac --daemon --kill; sudo airmon-ng stop wlan0mon; su
 alias userjs='~/.mozilla/updater.sh -l -s -o ~/.mozilla/user-overrides.js'
 alias changemac='sudo systemctl stop NetworkManager; sudo macchanger -a wlan0; sudo systemctl start NetworkManager'
 alias dot='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
-alias dota='dot commit -a -m "push-latest-changes" && ssh-add ~/.ssh/bugaddr && dot push'
+alias dota='dot commit -a -m "$(date)" && ssh-add ~/.ssh/bugaddr && dot push'
 alias suspend='systemctl suspend'
 alias hibernate='systemctl hibernate'
 alias snip='less ~/.snip'

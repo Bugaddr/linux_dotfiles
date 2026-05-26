@@ -7,13 +7,13 @@ export PATH="$HOME/.local/bin:$GOPATH/bin:/usr/local/bin:$PATH"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # Functions
-__set_prompt() { local ext=$? c="\[\e[1;32m\]"; [[ $ext -ne 0 ]] && c="\[\e[1;31m\]"; PS1="\[\e[1;32m\]\u@\h\[\e[0m\] \[\e[1;34m\]\w\[\e[0m\] ${c}\\\$\[\e[0m\] "; }
+__set_prompt() { local ext=$? c="\[\e[1;32m\]" v=""; [[ $ext -ne 0 ]] && c="\[\e[1;31m\]"; [[ -n "$VIRTUAL_ENV" ]] && v="\[\e[1;35m\]($(basename "$VIRTUAL_ENV"))\[\e[0m\] "; PS1="${v}\[\e[1;32m\]\u@\h\[\e[0m\] \[\e[1;34m\]\w\[\e[0m\] ${c}\\\$\[\e[0m\] "; }
 PROMPT_COMMAND=__set_prompt
 aur() { (cd ~/.cache && git clone "https://aur.archlinux.org/$1.git" && cd "$1" && makepkg -si); }
 pp() { local p=/sys/firmware/acpi/platform_profile PS3="Set: "; echo "Now: $(<"$p")"; select o in $(<"${p}_choices"); do [[ -n $o ]] && sudo tee "$p" <<<"$o" >/dev/null && break; done; }
 tb() { local p=/sys/devices/system/cpu/intel_pstate/no_turbo; [[ -n $1 ]] && sudo tee "$p" <<<"$((!$1))" >/dev/null; (( $(<"$p") )) && echo 'Turbo: Off' || echo 'Turbo: On'; }
 np() { local p=/sys/module/pcie_aspm/parameters/policy PS3="Set: "; echo "Now: $(<"$p")"; select o in $(tr -d '[]' <"$p"); do [[ -n $o ]] && sudo tee "$p" <<<"$o" >/dev/null && break; done; }
-cool() (trap 'echo 2|sudo tee /sys/class/hwmon/hwmon*/pwm*_enable>/dev/null' EXIT; echo 0|sudo tee /sys/class/hwmon/hwmon*/pwm*_enable>/dev/null; read -r)
+cool() { (trap 'echo 2|sudo tee /sys/class/hwmon/hwmon*/pwm*_enable>/dev/null' EXIT;echo 0|sudo tee /sys/class/hwmon/hwmon*/pwm*_enable>/dev/null;while :;do printf '\rCPU: %s°C' "$(awk '{printf "%.1f",$1/1000;exit}' /sys/class/hwmon/hwmon*/temp1_input)";read -rt1&&break;done);}
 
 # Alias
 alias nvidia='sudo envycontrol -s nvidia --force-comp --verbose'

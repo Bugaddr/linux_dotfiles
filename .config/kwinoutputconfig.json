@@ -14,10 +14,12 @@
                 ],
                 "autoRotation": "InTabletMode",
                 "automaticBrightness": false,
-                "brightness": 0.9,
+                "brightness": 0.2,
                 "colorPowerTradeoff": "PreferEfficiency",
                 "colorProfileSource": "ICC",
                 "connectorName": "eDP-1",
+                "customModes": [
+                ],
                 "detectedDdcCi": false,
                 "edidHash": "c73bf3c3a9861a8e3ee2ae18b99a623f",
                 "edidIdentifier": "BOE 2580 0 18 2021 0",
@@ -26,6 +28,7 @@
                 "iccProfilePath": "/home/bugaddr/.config/dotfiles_assets/color/srgb_color_space_profile.icm",
                 "maxBitsPerColor": 0,
                 "mode": {
+                    "flags": 1,
                     "height": 1440,
                     "refreshRate": 165003,
                     "width": 2560

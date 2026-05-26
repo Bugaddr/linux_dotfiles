@@ -4,5 +4,8 @@ PowerProfile=balanced
 [Battery][Performance]
 PowerProfile=balanced
 
+[LowBattery][Display]
+UseProfileSpecificDisplayBrightness=false
+
 [LowBattery][Performance]
 PowerProfile=power-saver

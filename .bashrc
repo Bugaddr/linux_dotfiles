@@ -13,7 +13,6 @@ aur() { (cd ~/.cache && git clone "https://aur.archlinux.org/$1.git" && cd "$1" 
 pp() { local p=/sys/firmware/acpi/platform_profile PS3="Set: "; echo "Now: $(<"$p")"; select o in $(<"${p}_choices"); do [[ -n $o ]] && sudo tee "$p" <<<"$o" >/dev/null && break; done; }
 tb() { local p=/sys/devices/system/cpu/intel_pstate/no_turbo; [[ -n $1 ]] && sudo tee "$p" <<<"$((!$1))" >/dev/null; (( $(<"$p") )) && echo 'Turbo: Off' || echo 'Turbo: On'; }
 np() { local p=/sys/module/pcie_aspm/parameters/policy PS3="Set: "; echo "Now: $(<"$p")"; select o in $(tr -d '[]' <"$p"); do [[ -n $o ]] && sudo tee "$p" <<<"$o" >/dev/null && break; done; }
-cool() { (trap 'echo 2|sudo tee /sys/class/hwmon/hwmon*/pwm*_enable>/dev/null' EXIT;echo 0|sudo tee /sys/class/hwmon/hwmon*/pwm*_enable>/dev/null;while :;do printf '\rCPU: %s°C' "$(awk '{printf "%.1f",$1/1000;exit}' /sys/class/hwmon/hwmon*/temp1_input)";read -rt1&&break;done);}
 
 # Alias
 alias nvidia='sudo envycontrol -s nvidia --force-comp --verbose'

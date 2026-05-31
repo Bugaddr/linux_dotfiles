@@ -1,0 +1,144 @@
+#!/usr/bin/env bash
+
+# --- helpers ---
+cpu_pkg_temp() {
+    # Scan for the "Package id 0" label (coretemp on 12th gen Intel)
+    for lbl in /sys/class/hwmon/hwmon*/temp*_label; do
+        grep -qi "package" "$lbl" 2>/dev/null || continue
+        awk '{printf "%.1f",$1/1000}' "${lbl/_label/_input}" 2>/dev/null
+        return
+    done
+    # Fallback: first temp1_input found
+    awk '{printf "%.1f",$1/1000;exit}' /sys/class/hwmon/hwmon*/temp1_input 2>/dev/null
+}
+
+gpu_temp() {
+    nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits 2>/dev/null
+}
+
+gpu_fan() {
+    nvidia-smi --query-gpu=fan.speed --format=csv,noheader,nounits 2>/dev/null
+}
+
+# --- main ---
+case "$1" in
+    auto)
+        echo 2 | sudo tee /sys/class/hwmon/hwmon*/pwm*_enable >/dev/null
+        echo "Fans: Auto Mode"
+        ;;
+    cool|turbo)
+        trap 'echo 2 | sudo tee /sys/class/hwmon/hwmon*/pwm*_enable >/dev/null; echo -e "\nFans: Auto Mode restored."' EXIT
+        echo 0 | sudo tee /sys/class/hwmon/hwmon*/pwm*_enable >/dev/null
+        while :; do
+            printf '\rCPU: %s°C  GPU: %s°C  (Turbo Mode - Press Enter to stop)' \
+                "$(cpu_pkg_temp)" "$(gpu_temp)"
+            read -rt1 && break
+        done
+        ;;
+    monitor)
+        tput civis 2>/dev/null  # hide cursor
+        trap 'tput cnorm 2>/dev/null; echo' EXIT INT TERM
+
+        for f in /sys/class/hwmon/hwmon*/pwm1_enable; do
+            [ -f "$f" ] && { hwmon_dir=$(dirname "$f"); break; }
+        done
+        [ -z "$hwmon_dir" ] && { echo "Cannot read fan controller"; exit 1; }
+
+        # Fixed line count keeps cursor repositioning reliable
+        NLINES=9
+        first=1
+
+        while :; do
+            pwm_enable=$(cat "${hwmon_dir}/pwm1_enable" 2>/dev/null)
+            case "$pwm_enable" in
+                0) mode="Turbo (Full Speed)" ;;
+                1)
+                    pct=$(( $(cat "${hwmon_dir}/pwm1" 2>/dev/null) * 100 / 255 ))
+                    mode="Manual (${pct}%)"
+                    ;;
+                2) mode="Auto" ;;
+                *) mode="Unknown" ;;
+            esac
+
+            f1=$(cat "${hwmon_dir}/fan1_input" 2>/dev/null || echo "—")
+            f2=$(cat "${hwmon_dir}/fan2_input" 2>/dev/null || echo "—")
+            gt=$(gpu_temp); gt=${gt:-N/A}
+
+            [ "$first" -eq 1 ] && first=0 || tput cuu "$NLINES" 2>/dev/null
+
+            printf 'Fan Monitor  (Press Enter to exit)\033[K\n'
+            printf '────────────────────────────────\033[K\n'
+            printf 'Mode:          %-20s\033[K\n' "$mode"
+            printf 'CPU Temp:      %s°C\033[K\n'  "$(cpu_pkg_temp)"
+            printf 'GPU Temp:      %s°C\033[K\n'  "$gt"
+            printf 'Fan 1 (CPU):   %s RPM\033[K\n' "$f1"
+            printf 'Fan 2 (GPU):   %s RPM\033[K\n' "$f2"
+            printf '────────────────────────────────\033[K\n'
+            printf 'Updated:       %s\033[K\n'     "$(date '+%H:%M:%S')"
+
+            read -rt1 && break
+        done
+        ;;
+    status)
+        for f in /sys/class/hwmon/hwmon*/pwm1_enable; do
+            [ -f "$f" ] && { enable_file="$f"; break; }
+        done
+
+        if [ -z "$enable_file" ]; then
+            echo "Status: Unable to read fan controller"
+            exit 1
+        fi
+
+        hwmon_dir=$(dirname "$enable_file")
+        pwm_enable=$(cat "$enable_file")
+
+        case "$pwm_enable" in
+            0) mode="Turbo (Full Speed)" ;;
+            1)
+                pwm_val=$(cat "${hwmon_dir}/pwm1" 2>/dev/null)
+                pct=$(( pwm_val * 100 / 255 ))
+                mode="Manual (${pct}%)"
+                ;;
+            2) mode="Auto" ;;
+            *) mode="Unknown" ;;
+        esac
+
+        gt=$(gpu_temp)
+        gf=$(gpu_fan)
+
+        printf 'Mode:     %s\n' "$mode"
+        printf 'CPU Temp: %s°C\n' "$(cpu_pkg_temp)"
+        [ -n "$gt" ] && printf 'GPU Temp: %s°C\n' "$gt"
+
+        for f in "${hwmon_dir}"/fan*_input; do
+            [ -f "$f" ] || continue
+            num=$(basename "$f" _input); num="${num#fan}"
+            case "$num" in
+                1) label="Fan 1 (CPU)" ;;
+                2) label="Fan 2 (GPU)" ;;
+                *) label="Fan $num"    ;;
+            esac
+            printf '%-16s %s RPM\n' "${label}:" "$(cat "$f")"
+        done
+
+        # nvidia-smi fan (N/A on most Nitro laptops — EC controls it)
+        if [ -n "$gf" ] && [[ "$gf" != *"N/A"* ]]; then
+            printf 'GPU Fan (NV):  %s%%\n' "$gf"
+        fi
+        ;;
+    *)
+        if [[ "$1" =~ ^[0-9]+$ ]] && [ "$1" -ge 0 ] && [ "$1" -le 100 ]; then
+            echo 1 | sudo tee /sys/class/hwmon/hwmon*/pwm*_enable >/dev/null
+            echo $(($1 * 255 / 100)) | sudo tee /sys/class/hwmon/hwmon*/pwm{1,2} >/dev/null
+            echo "Fans: Custom Mode at $1%"
+        else
+            echo "Usage: fan [ auto | cool | monitor | status | 0-100 ]"
+            echo "Examples:"
+            echo "  fan 50       # Sets fans to 50%"
+            echo "  fan auto     # Restores default behavior"
+            echo "  fan cool     # Maxes fans & shows live CPU+GPU temps"
+            echo "  fan monitor  # Live dashboard: mode, temps, RPMs"
+            echo "  fan status   # Snapshot of mode, temps, and RPMs"
+        fi
+        ;;
+esac

@@ -78,7 +78,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][2][Applets][3][Configuration]
-popupHeight=549
+popupHeight=552
 popupWidth=647
 
 [Containments][2][Applets][3][Configuration][ConfigDialog]
@@ -152,7 +152,6 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][2][Applets][7][Applets][15][Configuration][General]
-currentTab=streams
 migrated=true
 
 [Containments][2][Applets][7][Applets][16]
@@ -176,7 +175,7 @@ plugin=org.kde.kscreen
 
 [Containments][2][Applets][7][Applets][23]
 immutability=1
-plugin=org.kde.plasma.bluetooth
+plugin=org.kde.kdeconnect
 
 [Containments][2][Applets][7][Applets][24]
 immutability=1
@@ -197,6 +196,10 @@ plugin=org.kde.plasma.mediacontroller
 immutability=1
 plugin=org.kde.plasma.vault
 
+[Containments][2][Applets][7][Applets][28]
+immutability=1
+plugin=org.kde.plasma.bluetooth
+
 [Containments][2][Applets][7][Applets][8][Configuration]
 PreloadWeight=42
 
@@ -210,9 +213,9 @@ DialogWidth=810
 
 [Containments][2][Applets][7][General]
 disabledStatusNotifiers=blueman
-extraItems=org.kde.plasma.cameraindicator,org.kde.plasma.bluetooth,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.printmanager,org.kde.plasma.brightness,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.plasma.networkmanagement,org.kde.kscreen,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.vault
+extraItems=org.kde.plasma.cameraindicator,org.kde.plasma.bluetooth,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.printmanager,org.kde.plasma.brightness,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.plasma.networkmanagement,org.kde.kscreen,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.vault,org.kde.kdeconnect
 hiddenItems=org.kde.plasma.clipboard,vlc,Easy Effects
-knownItems=org.kde.plasma.vault,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.plasma.bluetooth,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.printmanager,org.kde.plasma.brightness,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.weather,org.kde.plasma.keyboardindicator,org.kde.plasma.networkmanagement,org.kde.kscreen,org.kde.plasma.mediacontroller
+knownItems=org.kde.plasma.vault,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.plasma.bluetooth,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.printmanager,org.kde.plasma.brightness,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.weather,org.kde.plasma.keyboardindicator,org.kde.plasma.networkmanagement,org.kde.kscreen,org.kde.plasma.mediacontroller,org.kde.kdeconnect
 shownItems=org.kde.plasma.battery
 
 [Containments][2][General]
@@ -220,4 +223,4 @@ AppletOrder=3;4;5;6;7;21;22
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/org.qbittorrent.qBittorrent.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.kinfocenter.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/virt-manager.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/antigravity.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/Counter-Strike 2.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/burpsuite-pro.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.discover.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/com.hex_rays.IDA.pro._9_2.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/Notes,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/vlc.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/forms.txt,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/android-studio.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/code-oss.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/firefox.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.dolphin.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.kcalc.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/chromium.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/steam.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/CNN,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/bruno.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.wireshark.Wireshark.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636
+screenMapping=desktop:/chromium.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/steam.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.dolphin.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/Counter-Strike 2.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.kcalc.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.kdeconnect.app.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/CNN,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/bruno.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.discover.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/firefox.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/android-studio.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.qbittorrent.qBittorrent.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/forms.txt,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/code-oss.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/virt-manager.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/antigravity.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.wireshark.Wireshark.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/org.kde.kinfocenter.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/burpsuite-pro.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/com.hex_rays.IDA.pro._9_2.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/Notes,0,a032c2b8-a89c-4c8b-a023-1d268068c636,desktop:/vlc.desktop,0,a032c2b8-a89c-4c8b-a023-1d268068c636

@@ -32,3 +32,7 @@ if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
 fi
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/bugaddr/.local/bin:$PATH"

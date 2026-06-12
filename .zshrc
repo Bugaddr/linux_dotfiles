@@ -47,3 +47,7 @@ alias 144='hyprctl keyword monitor eDP-1,2560x1440@144,auto,auto; kscreen-doctor
 alias 165='hyprctl keyword monitor eDP-1,2560x1440@165,auto,auto; kscreen-doctor output.eDP-1.mode.2560x1440@165'
 alias nano='nvim'
 alias vlc='$HOME/.local/bin/vlchidpi'
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/bugaddr/.local/bin:$PATH"

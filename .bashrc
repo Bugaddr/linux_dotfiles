@@ -33,3 +33,7 @@ alias pr='espeak-ng -v en-gb -s 130 -p 50 -k20'
 alias unpac='pacman -Qeq | fzf --multi --preview "pacman -Qi {1}" | xargs -ro sudo pacman -Rcns'
 alias mvenv='python -m venv ./venv'
 alias avenv='source ./venv/bin/activate'
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/bugaddr/.local/bin:$PATH"

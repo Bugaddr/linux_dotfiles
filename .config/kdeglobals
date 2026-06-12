@@ -153,7 +153,7 @@ frameContrast=0.2
 Allow Expansion=false
 Automatically select filename extension=true
 Breadcrumb Navigation=false
-Decoration position=2
+Decoration position=0
 Show Full Path=false
 Show Inline Previews=true
 Show Preview=false
@@ -162,9 +162,9 @@ Show hidden files=true
 Sort by=Date
 Sort directories first=true
 Sort hidden files last=true
-Sort reversed=true
+Sort reversed=false
 Speedbar Width=138
-View Style=Simple
+View Style=Detail
 
 [KScreen]
 ScaleFactor=1.5

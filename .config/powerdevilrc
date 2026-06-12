@@ -1,11 +1,20 @@
 [AC][Performance]
 PowerProfile=balanced
 
+[AC][SuspendAndShutdown]
+SleepMode=3
+
 [Battery][Performance]
 PowerProfile=balanced
+
+[Battery][SuspendAndShutdown]
+SleepMode=3
 
 [LowBattery][Display]
 UseProfileSpecificDisplayBrightness=false
 
 [LowBattery][Performance]
 PowerProfile=power-saver
+
+[LowBattery][SuspendAndShutdown]
+SleepMode=3

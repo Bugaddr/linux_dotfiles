@@ -2,9 +2,15 @@
     {
         "data": [
             {
+                "abmLevel": 0,
                 "allowDdcCi": true,
                 "allowSdrSoftwareBrightness": false,
                 "autoBrightnessCurve": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
                     0,
                     0,
                     0,
@@ -14,7 +20,7 @@
                 ],
                 "autoRotation": "InTabletMode",
                 "automaticBrightness": false,
-                "brightness": 0.15,
+                "brightness": 0.3,
                 "colorPowerTradeoff": "PreferEfficiency",
                 "colorProfileSource": "ICC",
                 "connectorName": "eDP-1",
@@ -24,6 +30,8 @@
                 "edidHash": "c73bf3c3a9861a8e3ee2ae18b99a623f",
                 "edidIdentifier": "BOE 2580 0 18 2021 0",
                 "edrPolicy": "always",
+                "hdrColorProfileSource": "EDID",
+                "hdrIccProfilePath": "",
                 "highDynamicRange": false,
                 "iccProfilePath": "/home/bugaddr/.config/dotfiles_assets/color/srgb_color_space_profile.icm",
                 "maxBitsPerColor": 0,
